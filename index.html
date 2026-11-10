@@ -1,0 +1,556 @@
+<!DOCTYPE html>
+<html lang="zh-Hant-HK">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>社區中心主任 面試準備｜問題庫 + Presentation 策略</title>
+<style>
+:root{--ink:#12283a;--ink2:#4a6377;--paper:#f6f3ed;--card:#fff;--line:#ddd6c7;
+--gold:#a8790c;--gold2:#c9971a;--teal:#0c6f6a;--rose:#a8414d;--violet:#57478a;
+--shadow:0 2px 9px rgba(18,40,58,.07)}
+*{box-sizing:border-box}
+body{margin:0;background:var(--paper);color:var(--ink);
+font-family:"Noto Sans TC","PingFang HK","Microsoft JhengHei",-apple-system,sans-serif;
+line-height:1.66;-webkit-font-smoothing:antialiased}
+.wrap{max-width:1120px;margin:0 auto;padding:0 20px 90px}
+
+header{background:linear-gradient(155deg,#12283a,#22485c 55%,#2f5f6d);color:#f6f3ed;
+padding:44px 20px 36px;text-align:center;position:relative;overflow:hidden}
+header::after{content:"";position:absolute;inset:0;
+background:radial-gradient(circle at 14% 18%,rgba(201,151,26,.20),transparent 45%),
+radial-gradient(circle at 86% 78%,rgba(12,111,106,.22),transparent 42%);pointer-events:none}
+header>*{position:relative;z-index:1}
+header h1{margin:0 0 8px;font-size:clamp(1.4rem,3.8vw,2.2rem);font-weight:800}
+header .sub{color:#c8d5df;max-width:760px;margin:0 auto 14px;font-size:clamp(.85rem,2.1vw,.98rem)}
+.chips{display:flex;flex-wrap:wrap;gap:8px;justify-content:center}
+.chip{background:rgba(255,255,255,.09);border:1px solid rgba(255,255,255,.2);
+padding:5px 13px;border-radius:99px;font-size:.78rem}
+.chip b{color:var(--gold2)}
+
+nav{position:sticky;top:0;z-index:40;background:rgba(246,243,237,.96);
+backdrop-filter:blur(9px);border-bottom:1px solid var(--line)}
+nav .in{max-width:1120px;margin:0 auto;padding:9px 20px;display:flex;gap:5px;overflow-x:auto;scrollbar-width:none}
+nav .in::-webkit-scrollbar{display:none}
+nav a{white-space:nowrap;font-size:.82rem;color:var(--ink2);text-decoration:none;padding:6px 12px;border-radius:7px}
+nav a:hover,nav a.on{background:var(--ink);color:#f6f3ed}
+
+section{padding-top:44px}
+h2{font-size:clamp(1.1rem,2.7vw,1.45rem);margin:0 0 6px;font-weight:800;display:flex;align-items:center;gap:10px;flex-wrap:wrap}
+h2 .n{background:var(--ink);color:var(--gold2);font-size:.72rem;font-weight:800;min-width:26px;height:26px;
+display:inline-flex;align-items:center;justify-content:center;border-radius:7px;padding:0 7px;flex:none}
+h2 .tag{font-size:.68rem;font-weight:700;color:#fff;background:var(--gold);padding:3px 10px;border-radius:99px}
+.lede{color:var(--ink2);font-size:.92rem;margin:0 0 20px;max-width:880px}
+
+.card{background:var(--card);border:1px solid var(--line);border-radius:13px;padding:20px 22px;box-shadow:var(--shadow);margin-bottom:15px}
+
+/* position cards */
+.pos{display:grid;grid-template-columns:repeat(auto-fit,minmax(290px,1fr));gap:14px}
+.p{border:1px solid var(--line);border-radius:12px;overflow:hidden;background:var(--card);box-shadow:var(--shadow);display:flex;flex-direction:column}
+.p .hd{padding:13px 17px;color:#fff;font-weight:800;font-size:.98rem}
+.p .bd{padding:14px 17px;flex:1;font-size:.87rem}
+.p .bd p{margin:0 0 9px}
+.p .bd .lbl{font-size:.72rem;font-weight:800;color:var(--ink2);text-transform:uppercase;letter-spacing:.06em;display:block;margin-bottom:4px}
+
+/* Q cards */
+.q{background:var(--card);border:1px solid var(--line);border-left:5px solid var(--teal);
+border-radius:11px;padding:17px 20px;margin-bottom:13px;box-shadow:var(--shadow)}
+.q.gold{border-left-color:var(--gold)}
+.q.rose{border-left-color:var(--rose)}
+.q.violet{border-left-color:var(--violet)}
+.q .qh{font-weight:800;font-size:1rem;margin-bottom:4px;display:flex;gap:9px;align-items:baseline;flex-wrap:wrap}
+.q .qh .qn{background:var(--ink);color:var(--gold2);font-size:.68rem;min-width:24px;height:24px;
+display:inline-flex;align-items:center;justify-content:center;border-radius:6px;padding:0 6px;flex:none;font-weight:800}
+.q .cluster{font-size:.7rem;font-weight:700;color:#fff;background:var(--teal);padding:2px 9px;border-radius:99px}
+.q.gold .cluster{background:var(--gold)} .q.rose .cluster{background:var(--rose)} .q.violet .cluster{background:var(--violet)}
+.q .ask{color:var(--ink);font-weight:600;font-size:.93rem;margin:6px 0 10px}
+.q .ans{font-size:.9rem;background:#faf8f3;border-radius:9px;padding:13px 15px;margin-bottom:9px}
+.q .ans b{color:var(--ink)}
+.q .cue{font-size:.82rem;color:var(--ink2);border-left:3px solid var(--line);padding-left:11px;margin-bottom:8px}
+.q .cue strong{color:var(--teal)}
+.q .ev{font-size:.76rem;color:#fff;background:var(--ink);border-radius:8px;padding:9px 12px}
+.q .ev b{color:var(--gold2)}
+.q .ev a{color:#8fd6d1}
+
+/* tables */
+.tw{overflow-x:auto;margin:12px 0}
+table{width:100%;border-collapse:collapse;font-size:.85rem;min-width:520px}
+th,td{padding:10px 13px;text-align:left;border-bottom:1px solid var(--line);vertical-align:top}
+th{background:#efe9de;font-weight:700;font-size:.77rem;color:var(--ink2);white-space:nowrap}
+tbody tr:last-child td{border-bottom:0}
+tbody tr:hover{background:#fdfbf6}
+
+/* timeline */
+.tl{border-left:3px solid var(--line);margin-left:9px;padding-left:22px}
+.tl .it{position:relative;margin-bottom:20px}
+.tl .it::before{content:"";position:absolute;left:-31px;top:6px;width:13px;height:13px;border-radius:50%;
+background:var(--gold);border:3px solid var(--paper)}
+.tl .it .t{font-weight:800;font-size:.95rem}
+.tl .it .when{font-size:.75rem;color:var(--ink2);font-weight:700;letter-spacing:.04em}
+.tl .it p{margin:5px 0 0;font-size:.88rem}
+
+/* highlight grid */
+.hg{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:13px}
+.h{border-radius:12px;padding:16px 18px;color:#fff}
+.h h4{margin:0 0 7px;font-size:.95rem;display:flex;align-items:center;gap:7px}
+.h p{margin:0;font-size:.85rem;line-height:1.6;opacity:.96}
+.h ul{margin:7px 0 0;padding-left:18px;font-size:.83rem}
+
+/* dos/donts */
+.dd{display:grid;grid-template-columns:1fr 1fr;gap:13px}
+@media(max-width:640px){.dd{grid-template-columns:1fr}}
+.dd .d{border-radius:12px;padding:16px 18px;font-size:.86rem}
+.dd .d.y{background:#eff7f5;border:1px solid #b6d9d3}
+.dd .d.n{background:#fdf1f2;border:1px solid #e8b8bd}
+.dd .d h4{margin:0 0 8px;font-size:.92rem}
+.dd .d ul{margin:0;padding-left:18px}
+.dd .d li{margin-bottom:5px}
+
+/* slide */
+.slide{background:var(--card);border:1px solid var(--line);border-radius:13px;padding:0;overflow:hidden;box-shadow:var(--shadow);margin-bottom:13px}
+.slide .sh{padding:12px 18px;background:var(--ink);color:#f6f3ed;font-weight:800;font-size:.94rem;display:flex;align-items:center;gap:10px}
+.slide .sh .no{background:var(--gold);color:var(--ink);font-size:.72rem;padding:2px 9px;border-radius:99px;font-weight:800}
+.slide .sb{padding:16px 20px}
+.slide .sb .say{font-size:.89rem;color:var(--ink);background:#faf8f3;border-radius:9px;padding:12px 15px;margin-bottom:10px}
+.slide .sb .say .k{background:var(--gold);color:#fff;font-size:.66rem;padding:2px 8px;border-radius:99px;font-weight:800;margin-right:7px}
+.slide .sb ul{margin:0;padding-left:19px;font-size:.86rem}
+.slide .sb li{margin-bottom:5px}
+
+/* gap */
+.gap{background:#fff9f0;border:1px solid #e8caa0;border-left:5px solid var(--gold);border-radius:11px;padding:17px 20px;margin:15px 0}
+.gap h3{margin:0 0 8px;font-size:.97rem;color:#8a5a0b}
+.gap p{margin:0 0 8px;font-size:.87rem;color:var(--ink2)}
+.gap p:last-child{margin:0}
+.gap strong{color:var(--ink)}
+
+.src{counter-reset:s;list-style:none;padding:0;margin:0}
+.src li{counter-increment:s;position:relative;padding:10px 0 10px 36px;border-top:1px dashed var(--line);font-size:.83rem}
+.src li:first-child{border-top:0}
+.src li::before{content:counter(s);position:absolute;left:0;top:10px;width:23px;height:23px;background:var(--ink);
+color:var(--gold2);border-radius:6px;font-size:.72rem;font-weight:800;display:flex;align-items:center;justify-content:center}
+.src .doc{font-weight:700;display:block}
+.src .org{color:var(--ink2);font-size:.77rem}
+.src a{color:var(--teal);word-break:break-all;font-size:.74rem}
+
+footer{background:var(--ink);color:#b6c3cd;padding:28px 20px;text-align:center;font-size:.79rem;margin-top:50px}
+footer b{color:var(--gold2)}
+</style>
+</head>
+<body>
+
+<header>
+  <h1>社區中心主任 面試準備</h1>
+  <p class="sub">職位 = 社會福利署社會工作主任（SWO）職系｜23條面試問題 + 建議答法 + Presentation 點 highlight</p>
+  <div class="chips">
+    <span class="chip">查核 <b>2026-11-10</b></span>
+    <span class="chip">來源 <b>社署 + 4個實例職位廣告</b></span>
+    <span class="chip">答法 <b>全部連你自己嘅真實經驗</b></span>
+    <span class="chip">未知 <b>明確標示唔會估</b></span>
+  </div>
+</header>
+
+<nav><div class="in">
+  <a href="#pos">① 定位</a>
+  <a href="#duty">② 職責叢</a>
+  <a href="#slide">③ Presentation</a>
+  <a href="#q1">④ 問題 1–8</a>
+  <a href="#q2">⑤ 問題 9–16</a>
+  <a href="#q3">⑥ 問題 17–23</a>
+  <a href="#gap">⑦ 空窗期 + 弱點</a>
+  <a href="#src">⑧ 來源</a>
+</div></nav>
+
+<div class="wrap">
+
+<!-- ① -->
+<section id="pos">
+  <h2><span class="n">1</span>你呢個位嘅定位 <span class="tag">開口第一句就要講清楚</span></h2>
+  <p class="lede">「社區中心主任」通常等同社署 <b>社會工作主任（SWO）</b> 職系 —— 職責寫明「<b>管理或協助管理社會福利辦事處／院舍／中心</b>」。呢個係管理職位，唔係前線職位。</p>
+
+  <div class="pos">
+    <div class="p">
+      <div class="hd" style="background:var(--teal)">SWO 職系職責（CSB 原文）</div>
+      <div class="bd">
+        <p><span class="lbl">四項核心</span></p>
+        <p>(a) 提供社會福利服務，以及<b>管理或協助管理社會福利辦事處／院舍／中心</b></p>
+        <p>(b) 協助<b>規劃和發展</b>各項社會福利服務，統籌和監察服務</p>
+        <p>(c) 監察非政府機構服務表現</p>
+        <p>(d) 牌照計劃下的法定職責</p>
+      </div>
+    </div>
+    <div class="p">
+      <div class="hd" style="background:var(--gold)">入職資格（實際廣告）</div>
+      <div class="bd">
+        <p><span class="lbl">硬性</span>註冊社工 ＋ 社會工作學位</p>
+        <p><span class="lbl">經驗年數</span>救世軍：學位＋<b>3年</b>（或文憑／副學士＋5年）<br>某機構：<b>4年 ASWO 或以上</b><br>東華三院：<b>5年 ASWO 或同等經驗</b></p>
+        <p><span class="lbl">你嘅狀況</span>2018年1月–2023年10月 ＝ <b>5年9個月</b>社工經驗（駐校社工 → 督導主任）→ <b>超出要求</b></p>
+      </div>
+    </div>
+    <div class="p">
+      <div class="hd" style="background:var(--ink)">薪級（社署 2026年4月1日）</div>
+      <div class="bd">
+        <p><span class="lbl">社會工作主任 SWO</span>MPS 34–47｜中堅37｜頂薪$139,825</p>
+        <p><span class="lbl">助理社會工作主任 ASWO</span>MPS 16–33｜$134,920</p>
+        <p><span class="lbl">實際參考</span>救世軍「中心主任（大窩口）」起薪 <b>$42,640</b>（按服務年資）</p>
+        <p style="color:var(--ink2);font-size:.82rem">→ 你帶住督導主任頭銜，應該向 <b>SWO 級／$45,000以上</b> 傾</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="card">
+    <h3 style="margin:0 0 12px;font-size:1rem">你嘅四個「定位句」（每個叢一句，面試攞去用）</h3>
+    <div class="tw">
+    <table>
+      <thead><tr><th>職責叢</th><th>你嘅定位句</th></tr></thead>
+      <tbody>
+        <tr><td><b>A 單位管理</b></td><td>「我做過學前教育駐校社工，由前線做到督導主任，管理過兩隊 PPI 社工同埋一個小組之家，後來轉做助理服務主管——所以中心行政、財政、人事、督導我唔係讀書讀返嚟，係真係做過。」</td></tr>
+        <tr><td><b>B 服務發展</b></td><td>「督導主任嗰四年我主要做緊訂定服務方向同指標、寫工作計劃同匯報、檢討服務質素——呢啲正正就係而家中心主任最核心嗰部分。」</td></tr>
+        <tr><td><b>C 人手督導</b></td><td>「我督導過兩隊學前教育社工同埋小組之家嘅同事，做過定期督導、專業指導同在職訓練。學前教育呢個老師唔同長者中心，但督導嘅原理係一樣：標準、界線、反映。」</td></tr>
+        <tr><td><b>D 社區網絡</b></td><td>「駐校時期我同校長、老師、家長、特殊需要支援團隊每日打交道，識得點樣喺地區持份者之間推動服務——呢個係社區中心最吃重嘅能力。」</td></tr>
+      </tbody>
+    </table>
+    </div>
+  </div>
+</section>
+
+<!-- ② -->
+<section id="duty">
+  <h2><span class="num">2</span>主任級嘅四個職責叢</h2>
+  <p class="lede">由4個實際職位廣告歸納出嚟。23條問題全部掛喺呢四個叢上面。</p>
+
+  <div class="pos">
+    <div class="p"><div class="hd" style="background:var(--teal)">A. 單位管理與行政</div><div class="bd">
+      <p>中心日常運作、<b>財政管理</b>、人事、招聘、服務策劃、寫計劃書、處理投訴、處理複雜個案</p>
+      <p style="color:var(--ink2);font-size:.82rem;margin-top:8px">⚠️ 幾乎所有實例都寫「<b>須輪值</b>」</p>
+    </div></div>
+    <div class="p"><div class="hd" style="background:var(--gold)">B. 服務發展與質素</div><div class="bd">
+      <p>策劃中心全年工作、訂定服務發展方向、監察服務表現、年度檢討、發展新服務（認知障礙症／護老者支援）</p>
+    </div></div>
+    <div class="p"><div class="hd" style="background:var(--rose)">C. 人手督導與團隊發展</div><div class="bd">
+      <p>督導團隊、員工培訓、臨床專業指導、服務量指標監察、處理表現問題</p>
+    </div></div>
+    <div class="p"><div class="hd" style="background:var(--violet)">D. 社區網絡與持份者</div><div class="bd">
+      <p>發掘社區及財政資源、連繫政府部門同地區持份者、參與社區委員會、推廣中心服務、統籌大型項目</p>
+    </div></div>
+  </div>
+
+  <div class="card">
+    <h3 style="margin:0 0 10px;font-size:1rem">如果係長者中心網絡，服務量標準（面試可以引數字）</h3>
+    <div class="tw">
+    <table>
+      <thead><tr><th>指標</th><th>長者地區中心 DECC</th><th>長者鄰舍中心 NEC</th></tr></thead>
+      <tbody>
+        <tr><td>基本規定</td><td>每週最少6天／48小時；<b>1名註冊社工監督</b></td><td>每週最少6天／48小時；<b>1名註冊社工監督</b></td></tr>
+        <tr><td>平均會員人數／年</td><td>1,000</td><td>400</td></tr>
+        <tr><td>小組及活動／年</td><td>500</td><td>269</td></tr>
+        <tr><td>活躍輔導個案（每月平均）</td><td>275</td><td>135</td></tr>
+        <tr><td>新開／重開輔導個案</td><td>55</td><td>27</td></tr>
+        <tr><td>義工／年</td><td>120</td><td>100</td></tr>
+        <tr><td>interRAI™ 9.3 評估／年</td><td>65</td><td>45</td></tr>
+        <tr><td>中心數目（截至2026-11-09）</td><td><b>41間</b></td><td><b>175間</b></td></tr>
+      </tbody>
+    </table>
+    </div>
+    <p style="font-size:.84rem;color:var(--ink2);margin:10px 0 0">DECC 智友醫社同行計劃必要人員：<b>資深護士 ＋ 一級物理／職業治療師 ＋ 註冊社工</b>｜長者活動中心：每週最少39小時／11節，員工須包括註冊社工</p>
+  </div>
+</section>
+
+<!-- ③ -->
+<section id="slide">
+  <h2><span class="n">3</span>Presentation 嘅 8 張 Slide <span class="tag">點 highlight 先吸引人</span></h2>
+  <p class="lede">核心原則：<b>唔好講你做過咩，要講你做過之後改變咗咩</b>。每一張都要有一句可以拎出嚟單獨講嘅「金句」。</p>
+
+  <div class="slide"><div class="sh"><span class="no">Slide 1</span>開場 60秒：一句話定位</div><div class="sb">
+    <div class="say"><span class="k">講</span>「我係周翠瑜，註冊社工，CUHK 社工學士同埋臨床碩士，12年做兒童及家庭服務。呢4年我由前線驻校社工做到督導主任，管理過兩隊學前教育社工同一個小組之家。我想申請嘅唔係一份工，係將我已經做過嘅督導同服務發展，轉去用喺社區中心上面。」</div>
+    <ul><li><b>唔好</b>逐個年份咁報履歷（面試官唔想聽你嘅年表）</li><li><b>要</b>用「前線 → 督導」呢條<b>升呢個弧線</b>做主線</li><li>最後一句直接扣住「社區中心」</li></ul>
+  </div></div>
+
+  <div class="slide"><div class="sh"><span class="no">Slide 2</span>你嘅督導主任成果（用數字）</div><div class="sb">
+    <div class="say"><span class="k">講</span>「做督導主任嗰四年，我做緊兩隊學前教育駐校社工同埋小組之家嘅督導。呢個位最核心唔係「做多啲個案」，而係<b>訂立標準、寫指引、帶同事將標準做到</b>。」</div>
+    <ul><li>列出你做過嘅：督導架構、服務指引、指標、匯報、家長工作坊、教材</li><li><b>有一兩個數字就拎出嚟</b>（例如：服務使用人次、家長參與人次、你寫咗幾多份指引）</li><li>⚠️ <b>唔好</b>寫「經驗豐富」「盡責盡職」呢類空字</li></ul>
+  </div></div>
+
+  <div class="slide"><div class="sh"><span class="no">Slide 3</span>你做過嘅「服務發展」實例 ← 主任最在意</div><div class="sb">
+    <div class="say"><span class="k">講</span>「除咗督導，我做過服務發展——呢個正正係主任職位嘅核心。比如我哋點樣將學前教育同埋特殊需要支援連埋一齊做、點樣設計家長工作坊、點樣訂服務指標再檢討。」</div>
+    <ul><li>呢張係<b>主任級嘅入場券</b>——前線社工唔會有呢類內容</li><li>講「點解」「點做」「有咩結果」三段式</li><li>有教材／工具書嘅話一定要提（證明你係「做嘢」而唔係「做過」）</li></ul>
+  </div></div>
+
+  <div class="slide"><div class="sh"><span class="no">Slide 4</span>輔導服務（如果呢個位有輔導）</div><div class="sb">
+    <div class="say"><span class="k">講</span>「我做過遊戲治療同親子／家長小組，明白一件事：小組唔係將人凑埋傾偈，而係要有明確目標、每次有觀察同進展記錄。家長工作坊我睇到嘅效果唔係家長「學到嘢」，而係家長返到屋企真係試得到。」</div>
+    <ul><li>⚠️ <b>讀書 ≠ 受訓</b>：你講「我做過遊戲治療」係真嘅；講「我讀咗《蛤蟆先生》所以識_transactional analysis_」就係越界，面試官一追問就爆</li><li>可以講：「空窗期我讀咗精神健康個案書，<b>改變咗我點樣睇家庭互動</b>——但我唔會話自己識咗臨床治療。」</li></ul>
+  </div></div>
+
+  <div class="slide"><div class="sh"><span class="no">Slide 5</span>由兒童家庭 → 社區長者：可信嘅橋</div><div class="sb">
+    <div class="say"><span class="k">講</span>「有人會問我冇長者服務經驗。我想講嘅係——長者地區中心同鄰舍中心服務對象係<b>當區60歲或以上嘅長者、照顧者同社區人士</b>，而<b>護老者支援</b>係其中一項明文服務內容。我做兒童家庭服務期間，見過好多家庭入面嘅照顧者就係呢啲長者嘅仔女——<b>我本身就做過家庭層面嘅介入</b>。」</div>
+    <ul><li>用社署單張嘅<b>原文服務項目</b>做橋，唔係用「我性格開朗」做橋</li><li>明確講「我冇長者中心經驗，但呢兩樣我做過」——<b>坦誠先可信</b></li><li>提「輪值」：你駐校社工做過輪班，主任亦要輪值</li></ul>
+  </div></div>
+
+  <div class="slide"><div class="sh"><span class="no">Slide 6</span>你點樣做主任（三層架構）</div><div class="sb">
+    <div class="say"><span class="k">講</span>「我諗主任要分三層做：<b>第一層係服務品質</b>——同工做緊啲乜、標準係咩；<b>第二層係團隊</b>——點樣令佢哋有動力同能力做到；<b>第三層係中心</b>——點樣搵資源、連持份者、令中心喺地區有位置。」</div>
+    <ul><li>呢個框架<b>直接對應廣告嘅四個職責叢</b>——面試官會聽到你讀過份廣告</li><li>每層配一個真實例子</li></ul>
+  </div></div>
+
+  <div class="slide"><div class="sh"><span class="no">Slide 7</span>你嘅專業發展（填實）</div><div class="sb">
+    <div class="say"><span class="k">講</span>「除咗 CUHK 嘅社工學士同臨床碩士，我持續做緊在職進修同教材開發。遊戲治療方面我睇緊香港專業培訓學會嘅基礎證書課程。」</div>
+    <ul><li>⚠️ <b>只講你真係做咗／真係報咗名</b>。未讀完就講「正在進修」；已讀完就講「已完成」</li><li>你已攞咗嘅「保護兒童網上課程」電子證書可以提（兩單元約6小時，測驗≥90%）</li><li>教材開發／專欄寫作可以當持續專業活動講</li></ul>
+  </div></div>
+
+  <div class="slide"><div class="sh"><span class="no">Slide 8</span>結尾 + 一個反問</div><div class="sb">
+    <div class="say"><span class="k">講</span>「總結一句：我做過前線、亦做過督導，明白一個中心點樣由服務、到團隊、到社區連埋一齊運作。我想將呢套經驗帶嚟做你哋中心嘅主任。呢個中心我有一個想問——<b>你哋而家最想解決嘅一個中心挑戰係咩？</b>」</div>
+    <ul><li>反問一條<b>關於中心</b>嘅問題，唔好問「有咩福利」</li><li>準備 2–3 條備用問題（人手、服務量指標、資助模式、鄰舍網絡）</li></ul>
+  </div></div>
+
+  <div class="dd" style="margin-top:18px">
+    <div class="d y"><h4>✅ 要 Highlight</h4><ul>
+      <li><b>督導主任呢個職銜</b>——因為廣告要求「ASWO 或以上」，你已經係</li>
+      <li><b>5年9個月</b>年資 vs 要求3–5年</li>
+      <li><b>服務發展</b>（寫計劃書、訂指標、檢討）——主任核心</li>
+      <li><b>教材／工具開發</b>——極少人拎得出呢個</li>
+      <li><b>臨床碩士</b>——用嚟支撐輔導專業判斷</li>
+      <li><b>輪值</b>適應力</li>
+    </ul></div>
+    <div class="d n"><h4>❌ 唔好 Highlight</h4><ul>
+      <li><b>空窗期三年</b>——唔好主動放大，畀人問就答（見下）</li>
+      <li><b>「讀咗幾本書」</b>——書唔係專業資歷</li>
+      <li><b>「我熟悉長者服務」</b>——你唔熟悉，講「我讀過、明白結構」就夠</li>
+      <li><b>太多兒童細節</b>——主任唔係兒童主任</li>
+      <li><b>空泛形容詞</b>：「有熱誠」「善溝通」「有責任感」</li>
+    </ul></div>
+  </div>
+</section>
+
+<!-- ④ Q1-8 -->
+<section id="q1">
+  <h2><span class="n">4</span>面試問題 1–8：單位管理同服務發展</h2>
+  <p class="lede">每題附：問題原文 → 建議答法 → <b>一句要拎出嚟嘅重點</b> → 證據錨點（可核實嘅條文／數字）。</p>
+
+  <div class="q gold"><div class="qh"><span class="qn">1</span>「點解想返嚟做社區中心？」<span class="cluster">A 單位管理</span></div>
+    <div class="ask">咁你做咗咁多年兒童家庭，而家轉去社區中心，係咩原因？</div>
+    <div class="ans"><b>答：</b>「我想做嘅唔係「轉跑道」，係<b>擴闊</b>我做緊嗰件事。督導主任嗰四年我做晒：訂服務方向、寫指引、督導團隊、檢討指標——呢四件事正正就係中心主任嘅工作內容。社區中心同學前教育唔同，服務對象唔同，但我做管理嗰部分係同一套。而且我喺兒童家庭服務見到好多照顧者，就係長者嘅仔女，<b>家庭介入呢條線我一直都喺度做</b>。」</div>
+    <div class="cue"><strong>重點：</strong>唔好講「想轉變」或者「想穩定」。要講「<b>擴闊我做緊嘅管理角色</b>」，同埋點出家庭照顧者呢個真實連結。</div>
+    <div class="ev"><b>證據：</b>救世軍「中心主任（大窩口）」職責原文：「負責帶領長者鄰舍中心，策劃、統籌及推動工作，<b>單位管理、行政、財務管理及員工督導</b>」— 呢四項你全部做過。</div>
+  </div>
+
+  <div class="q gold"><div class="qh"><span class="qn">2</span>「你做過長者服務嗎？」<span class="cluster">D 社區網絡</span></div>
+    <div class="ask">你之前都係做兒童家庭，長者服務方面你有咩經驗？</div>
+    <div class="ans"><b>答：</b>「我冇喺長者中心做過，我要老實講。但我做過三樣嘢同呢個位直接相關：<b>第一</b>，我讀過社署現行嘅長者中心服務規定——長者地區中心41間、鄰舍中心175間，服務對象係當區60歲或以上長者、照顧者同社區人士，<b>護老者支援係明文服務內容</b>；<b>第二</b>，我做兒童家庭服務時，處理過好多家庭入面嘅照顧壓力同照顧者支援；<b>第三</b>，我做過遊戲治療同小組、寫過教材，知道點樣將服務變成可衡量嘅指標。<b>我要補嘅係長者中心嘅實務細節，我唔會扮我識。</b>」</div>
+    <div class="cue"><strong>重點：</strong>坦誠 + 立即補三樣具體嘢。<b>唔好扮</b>——面試官一定會追問「咁你知唔知長者地區中心要做咩」，扮就冇晒。</div>
+    <div class="ev"><b>證據：</b>社署《長者地區中心名單及電話》截至2026-11-09：41間 DECC、175間 NEC。FSA 附件III 規定 DECC 每週最少6天／48小時、須由1名註冊社工監督營運。</div>
+  </div>
+
+  <div class="q gold"><div class="qh"><span class="qn">3</span>「你會點樣做中心全年工作計劃？」<span class="cluster">B 服務發展</span></div>
+    <div class="ask">如果你接手，你頭三個月會點樣規劃呢個中心？</div>
+    <div class="ans"><b>答：</b>「我會分三步。<b>第一，讀清楚合約</b>——中心做乜、服務量指標係咩（以長者地區中心為例：會員人數、小組及活動數、活躍輔導個案、義工、interRAI評估都有議定水平），唔知自己有咩就唔會亂做。<b>第二，睇數據同對象</b>——而家中心嘅服務使用者係邊類人？邊類未覆蓋到？<b>第三，先定方向再開活動</b>——如果話『開多啲活動』但唔知點解，我唔會做。我做督導主任時學到最痛嘅一課就係：活動開得多唔等於服務做得好。」</div>
+    <div class="cue"><strong>重點：</strong>「<b>先讀合約，再睇數據，最後先定方向</b>」——呢個順序就係專業主任同活動主任嘅分別。</div>
+    <div class="ev"><b>證據：</b>長者地區中心 FSA 服務量標準：一年內平均會員1,000、小組及活動500、活躍輔導個案每月平均275、新開／重開輔導個案55、長者治療小組44、interRAI 9.3 評估65、義工120。</div>
+  </div>
+
+  <div class="q gold"><div class="qh"><span class="qn">4</span>「中心有剩返幾多錢，你點樣分配？」<span class="cluster">A 單位管理</span></div>
+    <div class="ask">中心預算有限，如果有人要求開新項目，你會點平衡？</div>
+    <div class="ans"><b>答：</b>「我會用三個問題去排：<b>呢個項目服務緊邊個對象</b>？係咪已經覆蓋緊而家嘅會員需要？<b>如果唔做，後果係咩</b>——會員少咗啲咩支援？<b>做完之後點樣知有冇用</b>？我唔會用『都有人要求』做理由，而會用服務數據同對象需要去排。做督導主任嗰陣，資源分配係我最常做嘅判斷——你唔可能每樣都要，所以要識講清楚點解唔做。」</div>
+    <div class="cue"><strong>重點：</strong>三問排序法（對象 → 後果 → 成效）。<b>要展示你做過「唔做」嘅決定</b>，唔淨係「做」嘅決定。</div>
+    <div class="ev"><b>證據：</b>各中心按整筆撥款津助，<b>津助基準載於社署發出的通知書內</b>；營辦者須遵從《整筆撥款津助手冊》、通告、指引。所以「點樣排優先」係主任自由裁量空間，亦係問責位。</div>
+  </div>
+
+  <div class="q"><div class="qh"><span class="qn">5</span>「你會點樣發展社區網絡？」<span class="cluster">D 社區網絡</span></div>
+    <div class="ask">你點樣令中心喺地區有位置、唔好變成「有份資訊咁」？</div>
+    <div class="ans"><b>答：</b>「我會先由<b>已經存在嘅關係</b>做起。駐校時期我每日同校長、老師、家長、特殊需要支援團隊打交道，學到一件事：<b>社區網絡唔係出席多個會</b>，而係你有冇一個『有事可以搵你』嘅角色。我會先清點中心同邊啲持份者已經有連繫、邊啲係斷嘅，然後揀最關鍵嗰幾條深做——例如轉介網絡同義工招募，因為呢兩樣可以即時變成服務。仲有，中心唔好只係『服務長者』，要識用社區資源去撬動服務。」</div>
+    <div class="cue"><strong>重點：</strong>「<b>有事搵你</b>」呢個定位 + 用<b>轉介同義工</b>做切入點（兩者都係官方服務項目）。</div>
+    <div class="ev"><b>證據：</b>Jooble 原文任職要求：「<b>發掘社區及財政資源，發展社區網絡工作</b>」；長者地區中心 FSA 服務量：長者支援服務隊網絡支援——接觸長者1,200／接受服務600／義工120。</div>
+  </div>
+
+  <div class="q"><div class="qh"><span class="qn">6</span>「你會點樣確保服務質素？」<span class="cluster">B 服務發展</span></div>
+    <div class="ask">你點樣確保中心唔會變成「做活動」而唔係「做服務」？</div>
+    <div class="ans"><b>答：</b>「我用三層保證。<b>第一層係合約</b>——所有中心都有16項服務質素標準同埋明確服務量指標，呢啲係底線，我會要求團隊知。<b>第二層係抽覆檢</b>——督導主任嗰陣我建立咗定期抽個案覆核同工作反思，唔係靠「感覺」。<b>第三層係用個案</b>——長者中心好多服務最終都係一對一嘅輔導同照顧者支援，服務『有冇質素』睇個案工作有冇做齊，而唔係睇有幾多活動簽到。」</div>
+    <div class="cue"><strong>重點：</strong>三層（合約標準 → 抽覆檢 → 個案工作）。<b>個案質素 vs 活動數量</b>嘅對比係你嘅專業立場。</div>
+    <div class="ev"><b>證據：</b>所有 FSA 樣本：<b>「服務營辦者須符合16項服務質素標準」</b>。長者地區中心／鄰舍中心／活動中心、長者日間護理中心、家居照顧服務全部適用。</div>
+  </div>
+
+  <div class="q"><div class="qh"><span class="qn">7</span>「你會點處理一個做得唔好嘅同工？」<span class="cluster">C 團隊督導</span></div>
+    <div class="ask">如果 team 裡面有個同事工作質素唔得，你會點做？</div>
+    <div class="ans"><b>答：</b>「我會分三步，唔會跳過。<b>第一，睇事實唔聽標籤</b>——係工作流程唔清楚，係工作量分配唔均，定係真係專業判斷有問題？<b>第二，直接講</b>——用返個案同記錄講，唔用『你態度有問題』呢類說話。<b>第三，同佢訂清楚改善嘅步驟同時間</b>，再跟進。我做督導主任管理過同事嘅表現問題，學到最有用嘅一句：<b>督導唔係叫人變好，係話清楚咩要改同點樣改</b>。如果真係改善唔到、影響服務，我亦都識按程序做。」</div>
+    <div class="cue"><strong>重點：</strong>「<b>督導唔係叫人變好，係話清楚咩要改同點樣改</b>」——呢句好記又專業。</div>
+    <div class="ev"><b>證據：</b>你實際管理過兩隊 PPI 社工同小組之家（2019年8月–2023年10月）。呢題要有<b>真實例子</b>，用STAR講一個同事個案。</div>
+  </div>
+
+  <div class="q"><div class="qh"><span class="qn">8</span>「長者地區中心同長者鄰舍中心有咩分別？」<span class="cluster">B 服務發展</span></div>
+    <div class="ask">你知道長者地區中心同長者鄰舍中心分別係咩？</div>
+    <div class="ans"><b>答：</b>「我查過現行規定。<b>長者地區中心</b>2001/02年推出，規模較大、服務較廣，附設<b>長者支援服務隊</b>（針對獨居同患病長者），仲有<b>智友醫社同行計劃</b>（輕度至中度認知障礙症，必須由社工轉介）。服務量指標亦大啲：會員1,000、小組及活動500、活躍輔導個案每月275。<b>長者鄰舍中心</b>2002/03年推出，配合地區中心做鄰舍層面支援，會員400、小組及活動269、活躍輔導個案每月135。兩者都要由註冊社工監督營運、最少開放6天／48小時。香港而家係41間地區中心、175間鄰舍中心。」</div>
+    <div class="cue"><strong>重點：</strong>呢題係<b>「你做咗功課」嘅直接證明</b>。數字要準，唔好講錯。</div>
+    <div class="ev"><b>證據：</b>社署《長者地區中心名單及電話》截至2026-11-09（41間 DECC、175間 NEC）＋ FSA for DECC／NEC 附件III。⚠️ 記住：2026年4月1日起「綜合家居照顧服務（體弱個案）」已改名「體弱長者家居照顧服務」——講錯名會露餡。</div>
+  </div>
+</section>
+
+<!-- ⑤ Q9-16 -->
+<section id="q2">
+  <h2><span class="n">5</span>面試問題 9–16：督導、團隊、情境題</h2>
+
+  <div class="q rose"><div class="qh"><span class="qn">9</span>「如果中心有長者被懷疑虐待，你點做？」<span class="cluster">C 團隊督導</span></div>
+    <div class="ask">你做過長者中心，如果遇到懷疑虐待／風險個案，你第一步會做咩？</div>
+    <div class="ans"><b>答：</b>「第一步係<b>保障安全</b>，第二步係<b>按程序</b>，唔係自己查完先講。<b>保障</b>——如果係即時危險就要即時處理同安排安全位置；<b>程序</b>——按社署嘅保護長者程序呈報，唔可以自行判斷『應該冇事』就唔報，唔可以私下同家人『傾下』就算。我做兒童保護嗰陣，呢個係我學到最硬嘅一課：<b>唔懷疑唔等於唔需要呈報</b>。同時我會即刻記錄，顧及服務使用者的尊嚴同私隱，唔好將件事喺中心內部傳開。」</div>
+    <div class="cue"><strong>重點：</strong>「<b>唔懷疑唔等於唔需要呈報</b>」+ 私隱同尊嚴。<b>你兒童保護嘅訓練係呢題嘅最強資產</b>。</div>
+    <div class="ev"><b>證據：</b>你已取得「保護兒童網上課程」電子證書（兩單元約6小時、測驗≥90%）——可以提，說明你係持續更新專業安全知識。</div>
+  </div>
+
+  <div class="q rose"><div class="qh"><span class="qn">10</span>「同工做嘢質素唔夠，中心又唔夠人手，你點做？」<span class="cluster">A 單位管理</span></div>
+    <div class="ask">如果一個同工做得唔好，但你又請唔到人，你會點處理？</div>
+    <div class="ans"><b>答：</b>「我會先分清楚係<b>能力</b>定<b>狀態</b>問題。能力唔夠要教同督導；狀態問題（例如工作量過大、情緒）就要先減載。實際做法係：<b>重新分配</b>工作、喺高風險個案加強支援、必要時縮減低風險活動嘅量去守住核心服務。至於請唔到人，我會用唔等於冇——例如調配跨中心支援、用義工做非專業工作等非專業部分，<b>唔好用義工做專業判斷</b>。同主管上司我要主動講清楚，唔係到咗爆煲先講。」</div>
+    <div class="cue"><strong>重點：</strong>「<b>守住核心服務，縮減低風險活動</b>」＋「<b>主動向上反映</b>」。呢個就係主任嘅判斷力。</div>
+    <div class="ev"><b>證據：</b>所有 FSA 都有基本服務規定（開放時數、在場人員）同服務量指標——<b>合約底線唔可以隨意破</b>，所以「縮減低風險活動去守核心」先係合規做法。</div>
+  </div>
+
+  <div class="q rose"><div class="qh"><span class="qn">11</span>「你點樣做員工培訓？」<span class="cluster">C 團隊督導</span></div>
+    <div class="ask">你會點樣設計同工嘅培訓？</div>
+    <div class="ans"><b>答：</b>「我唔會做『generic 培訓』。我會做三層：<b>入職</b>——服務對象同咩係專業介入同咩唔係，呢個最關鍵，因為長者中心好多同事會將『陪長者傾偈』當成輔導；<b>在職</b>——針對服務量指標同唔達標嘅位，例如照顧者支援、認知障礙症、長者治療小組；<b>專屬</b>——就係中心自己嘅難處，例如轉介網絡點樣做、義工點樣帶。我做督導主任時做過教材同家長工作坊，我深知道<b>將一套嘢寫成可以交畀同事直接用嘅指引</b>，比講一堂課有用得多。」</div>
+    <div class="cue"><strong>重點：</strong>「<b>將嘢寫成可以交畀同事直接用嘅指引</b>」——你真係做過教材，呢個係實質優勢。</div>
+    <div class="ev"><b>證據：</b>長者地區中心 FSA：智友醫社同行計劃必要人員含資深護士、一級物理／職業治療師、註冊社工——專業訓練係合約要求，唔係可選。</div>
+  </div>
+
+  <div class="q rose"><div class="qh"><span class="qn">12</span>「你會點同長者地區中心嘅長者支援服務隊合作？」<span class="cluster">D 社區網絡</span></div>
+    <div class="ask">如果中心有長者支援服務隊，你點樣整合？</div>
+    <div class="ans"><b>答：</b>「長者支援服務隊嘅對象係<b>可能因獨居同患病而需要照顧</b>嘅長者——即係中心裡面最需要支援嗰批，但未必自己行入嚟嘅人。所以我會當佢係中心嘅<b>外展手臂</b>：定期做獨居長者探訪（長者支援服務隊嘅網絡支援指標係接觸1,200／接受服務600），發掘唔活躍長者再轉介入中心。呢個唔係「中心外展」咁簡單，係一個<b>一入一出</b>嘅循環：中心發現需要 → 服務隊接觸 → 轉介返中心。」</div>
+    <div class="cue"><strong>重點：</strong>「<b>一入一出嘅循環</b>」——直接用 FSA 嘅網絡支援指標，證明你讀過服務規格。</div>
+    <div class="ev"><b>證據：</b>FSA for DECC：長者支援服務隊網絡支援服務——接觸長者總數1,200／接受服務總數600／義工120；智友醫社同行計劃對象<b>須由社工轉介</b>。</div>
+  </div>
+
+  <div class="q"><div class="qh"><span class="qn">13</span>「你嘅督導主任做咗咩令你覺得最有成就感？」<span class="cluster">C 團隊督導</span></div>
+    <div class="ask">做督導主任嗰陣，邊件事令你最有成就感？</div>
+    <div class="ans"><b>答：</b>講一個<b>有真實數字、有轉折</b>嘅故事。STAR：<b>S</b> 情況（當時有咩問題）→ <b>T</b> 我要解決咩 → <b>A</b> 我做咗咩（重點講你嘅判斷，唔係「我哋」）→ <b>R</b> 結果（有數字就講數字，冇數字就講具體改變）。</div>
+    <div class="cue"><strong>重點：</strong>準備 <b>1個主故事（用足2分鐘）＋ 2個後備</b>（一個同事督導、一個投訴／安全處理）。主故事要同時打到「服務發展」同「督導」兩個叢。</div>
+    <div class="ev"><b>提醒：</b>所有數字要同你份 Resume 一致。如果個數字唔記得，就講變化而唔好講數字——<b>講錯數字比冇數字更傷</b>。</div>
+  </div>
+
+  <div class="q"><div class="qh"><span class="qn">14</span>「你點解會輪值？」<span class="cluster">A 單位管理</span></div>
+    <div class="ask">中心主任要輪值，你冇問題吧？</div>
+    <div class="ans"><b>答：</b>「冇問題，我做前線嗰陣一直要輪值——駐校社工要跟學作息，假期要有人頂。呢個我熟。而且我諗主任輪值唔只為咗頂更，仲係<b>同前線接觸嘅唯一方法</b>：唔落嚟你就唔知實際運作緊咩。」</div>
+    <div class="cue"><strong>重點：</strong>「<b>輪值係主任了解前線嘅唯一方法</b>」——將一個要求轉化成你嘅優勢。</div>
+    <div class="ev"><b>證據：</b>救世軍中心主任職位原文：「<b>須輪值</b>」；多個主任級職位廣告亦有寫。</div>
+  </div>
+
+  <div class="q"><div class="qh"><span class="qn">15</span>「你點樣同政府部門／其他機構相處？」<span class="cluster">D 社區網絡</span></div>
+    <div class="ask">你會點同社署、康樂及文化事務署、民署呢啲部門合作？</div>
+    <div class="ans"><b>答：</b>「我嘅做法係<b>先理解佢哋嘅規矩，再傾合作</b>。做社福服務，好多時唔係我哋有冇意願，而係有冇合資格、有冇符合服務規格、文件夾唔夾。譬如轉介嚟嘅個案要唔要社工轉介、智友醫社同行計劃一定要社工轉介，呢啲規矩唔清楚就會做成件事做錯。所以我會先睇清對方嘅要求同限制，再設計一個<b>對方做得起、我哋做得實</b>嘅方案。」</div>
+    <div class="cue"><strong>重點：</strong>「<b>對方做得起、我哋做得實</b>」——實務智慧，唔好講空泛嘅「合作精神」。</div>
+    <div class="ev"><b>證據：</b>FSA 對營辦者有正式規管責任：社署會<b>密切監察</b>服務營辦者有否遵守所有文件規定；長者地區中心／鄰舍中心<b>接受綜合家庭服務中心、綜合服務中心、醫務社會服務部轉介</b>。</div>
+  </div>
+
+  <div class="q"><div class="qh"><span class="qn">16</span>「你會點衡量自己做好咗？」<span class="cluster">B 服務發展</span></div>
+    <div class="ask">你會用咩去衡量自己做好咗個主任？</div>
+    <div class="ans"><b>答：</b>「三樣。<b>第一，服務指標</b>——唔係淨睇活動數，睇輔導個案、照顧者支援、轉介個案有冇做到議定水平，因為呢啲先係服務深度。<b>第二，同工</b>——如果同工覺得做唔到、唔知點做，咁中心就唔可能好；我會睇流失率同督導時間有冇真係用喺專業指導而唔係行政。<b>第三，社區</b>——中心喺地區有冇人識、會唔會有人主動轉介。呢啲唔係我嘅 KPI，但我自己會睇。」</div>
+    <div class="cue"><strong>重點：</strong>三層（服務深度 → 團隊健康 → 社區位置）。<b>提「督導時間用喺邊度」</b>係一個好細緻嘅點，會加分。</div>
+    <div class="ev"><b>證據：</b>服務量標準本身已經係答案的一半（會員、活動、輔導個案、interRAI評估、義工）——你唔使自創 KPI，你識用合約指標。</div>
+  </div>
+</section>
+
+<!-- ⑥ Q17-23 -->
+<section id="q3">
+  <h2><span class="n">6</span>面試問題 17–23：個人、條件、收尾</h2>
+
+  <div class="q violet"><div class="qh"><span class="qn">17</span>「你嘅弱點係咩？」<span class="cluster">個人</span></div>
+    <div class="ask">你覺得自己有咩不足？</div>
+    <div class="ans"><b>答：</b>「我<b>冇做過長者中心</b>，呢個係實話，唔係包裝。我嘅處理方法係：我用咗幾個星期讀晒社署嗰邊嘅服務簡介、FSA 條文同埋中心名單，<b>見到中心之前已經知道中心做乜、要求乜、人手同指標</b>。但我唔會講我已經識做長者服務——我識做管理，而管理嘅原理我帶得過去。」</div>
+    <div class="cue"><strong>重點：</strong>講一個<b>真實、正在處理、有行動</b>嘅弱點。唔好用「我太追求完美」呢類假弱點。</div>
+    <div class="ev"><b>證據：</b>你已讀完並整理社署 DECC／NEC 服務單張同 FSA，中心名單截至2026-11-09（41＋175間）。呢個「行動」係實在嘅。</div>
+  </div>
+
+  <div class="q violet"><div class="qh"><span class="qn">18</span>「你嘅五年後計劃係咩？」<span class="cluster">個人</span></div>
+    <div class="ask">你睇五年後會點？</div>
+    <div class="ans"><b>答：</b>「我想留喺社區中心呢條路。<b>呢個位值得做嘅原因</b>，係佢係一個中心——你可以由零建立一個服務品牌，唔係只係執行既定項目。我做督導主任嘅時候最開心就係訂立咗一套嘢之後，見到第二年真係行得穩。而家我想做更大個循環：由中心入面去到地區網絡。」</div>
+    <div class="cue"><strong>重點：</strong>唔好講「想升做更高級」或者「想讀多個書」。要講<b>你想做咩</b>，唔係你想要咩。</div>
+    <div class="ev"><b>提醒：</b>呢題唔好提薪金、唔好提「想移民」、唔好提「想返屋企」。</div>
+  </div>
+
+  <div class="q violet"><div class="qh"><span class="qn">19</span>「你期望人工幾多？」<span class="cluster">個人</span></div>
+    <div class="ask">你嘅薪金期望係？</div>
+    <div class="ans"><b>答：</b>「我睇返個職位嘅級別同要求：係註冊社工、ASWO 或以上年資、督導主任職銜，<b>我嘅期望係$45,000–$48,000</b>（月薪）。如果中心有夜津貼或輪值津貼我都 welcome。我更想知中心嘅整體薪酬結構同其他主任級同事嘅水平，等我可以按實際職責對齊。」</div>
+    <div class="cue"><strong>重點：</strong>講一個<b>範圍</b>唔好講一個數。錨點用「ASWO或以上年資＋督導主任職銜」，再拉返去要求本身。</div>
+    <div class="ev"><b>證據：</b>救世軍中心主任（大窩口）起薪 <b>$42,640</b>；社署 SWO 職系 MPS 34–47（中堅37）。<b>[如你有實際數字想改，話我知一句就改]</b></div>
+  </div>
+
+  <div class="q violet"><div class="qh"><span class="qn">20</span>「你幾时可以開始上班？」<span class="cluster">個人</span></div>
+    <div class="ask">你幾時可以到任？</div>
+    <div class="ans"><b>答：</b>「[notice period: TBC]——如果有咩需要交接，<b>我可以配合</b>。我做過交接同離開前交接文件，唔會留手尾。」</div>
+    <div class="cue"><strong>重點：</strong>呢題簡短答，唔好加太多。<b>「我做過交接」呢句要講</b>，因為主任交接涉及服務檔案同在職同事。</div>
+    <div class="ev"><b>提醒：</b>你 2023年10月離開救世軍，<b>而家已經唔需要放通知期</b>——呢個係優勢，唔好漏咗講。</div>
+  </div>
+
+  <div class="q violet"><div class="qh"><span class="qn">21</span>「仲有咩我應該知嘅嗎？」<span class="cluster">收尾</span></div>
+    <div class="ask">仲有咩嘢我應該知道？</div>
+    <div class="ans"><b>答：</b>「三樣。第一，<b>我讀同理解長者中心嘅服務架構</b>——41間地區中心、175間鄰舍中心、護老者支援係明文服務內容，我已經讀過 FSA 條文，見面可以傾細節。第二，<b>我持續做緊專業進修</b>——遊戲治療基礎證書課程我喺進修緊，「保護兒童網上課程」我已經完成咗兩單元。<b>第三</b>，如果你想聽我講我點樣用之前督導主任嘅框架去諗呢個位，我可以講多五分鐘。」</div>
+    <div class="cue"><strong>重點：</strong>呢題係最後一次加分機會。<b>用嚟帶出證書、進修同「想再講多陣」</b>——主動延長對話係正面訊號。</div>
+    <div class="ev"><b>證據：</b>保護兒童網上課程：兩單元約6小時、測驗≥90%得電子證書（你已取得）。</div>
+  </div>
+
+  <div class="q violet"><div class="qh"><span class="qn">22</span>「你做緊嘅中心有咩你覺得最需要改進？」<span class="cluster">B 服務發展</span></div>
+    <div class="ask">你會點改善長者地區中心？</div>
+    <div class="ans"><b>答：</b>「我唔識得中心，所以我唔會亂講。我可以講我會<b>點樣查</b>：第一步睇服務指標同實際數據嘅差距（例如會員人數夠未、活躍輔導個案每月平均有無達到275、小組及活動500個有無質素）；第二步睇轉介網絡——中心接唔接到跨部門轉介；第三步睇會員結構——有冇長者支援服務隊發掘嘅唔活躍長者入到嚟。<b>有數據先有判斷</b>，呢個係我做督導時學到嘅。」</div>
+    <div class="cue"><strong>重點：</strong>用「<b>我會點樣查</b>」代替「我會點改」——對一個你未到過嘅單位，呢個係唯一可信嘅答法。</div>
+    <div class="ev"><b>證據：</b>DECC FSA 服務量標準（會員1,000／活動500／輔導275／新開55／治療小組44／interRAI 65／義工120／網絡支援1,200＋600）。</div>
+  </div>
+
+  <div class="q violet"><div class="qh"><span class="qn">23</span>「你識用電腦做文書、報告、數據分析嗎？」<span class="cluster">A 單位管理</span></div>
+    <div class="ask">你做主任需要做行政同數據分析，你做得到嗎？</div>
+    <div class="ans"><b>答：</b>「做得到。督導主任要交季度統計報表、服務數據、活動數量、指標達成率，我做咗四年。仲有教材同專欄嘅寫作經驗，對住不同讀者調整內容——對住家長、對住同工、對住專業人士，講法唔同。」</div>
+    <div class="cue"><strong>重點：</strong>「<b>季度統計報表</b>」呢個字要講出——因為 FSA 明文要求營辦者交季度統計報表，呢個就係主任日常。</div>
+    <div class="ev"><b>證據：</b>FSA 第13段（體弱）／第12段（家居支援）：「服務營辦者須提交<b>季度統計報表</b>，當中可能包括以訂明格式列出的服務使用者狀況、提供的服務、服務成效…」。</div>
+  </div>
+</section>
+
+<!-- ⑦ -->
+<section id="gap">
+  <h2><span class="n">7</span>空窗期點答 + 兩個高危題</h2>
+
+  <div class="card">
+    <h3 style="margin:0 0 12px;font-size:1rem">空窗期（2023年10月至今）— 三段式，唔好道歉</h3>
+    <div class="say" style="background:#faf8f3;border-radius:9px;padding:14px 16px;font-size:.89rem">
+      <b>① 事實（一句）：</b>「2023年10月我離開救世軍，主要原因係要照顧家庭。」<br>
+      <b>② 產出（只講真嘅）：</b>「呢段时间我主要做家庭照顧，同時有睇書同做專業反思——包括《失序日常》（何美怡醫生著，非凡出版）同《蛤蟆先生去看心理醫生》。<b>呢啲係閱讀同思考，唔係臨床訓練</b>；我唔會講自己識咗治療方法，但佢哋確實改變咗我睇家庭互動同個案嘅角度——特別係點樣理解行為背後嘅焦慮同創傷。」<br>
+      <b>③ 回到呢個位（一句）：</b>「所以我而家唔係離開專業，係由前線同督導轉去主任——想將我做過嘅服務發展同團隊管理帶去社區中心。」<br>
+      <b>④ 現時證據：</b>「我已經完成『保護兒童網上課程』兩單元（電子證書），而家喺進修遊戲治療基礎證書課程。」
+    </div>
+    <p style="font-size:.85rem;color:var(--ink2);margin:11px 0 0"><b>⚠️ 三個唔好：</b>唔好話「我喺度做緊自由工作」當工作；唔好將睇書講成受訓；唔好虛構任何進修。面試官如果追問書嘅內容，你要答得出「改變咗我咩」——答唔出就轉去講你實際做過嘅教材同工作坊。</p>
+  </div>
+
+  <div class="gap">
+    <h3>⚠️ 兩個高危題</h3>
+    <p><strong>① 講名唔講「有咩成果」</strong> — 「我督導過兩隊學前教育社工同小組之家」✓；「我帶領過一個團隊」✗（冇數字＝冇證據）。<strong>每個數字都要同你份 Resume 一致</strong>，唔記得就講變化。</p>
+    <p><strong>② 唔好將「督導主任」講成前線</strong> — 你而家呢個位同之前督導主任一樣係管理層。面試官問「你做主任會點做」，你要答<b>你已經做過</b>嘅嘢，唔係答你打算做。</p>
+    <p><strong>③ 唔好講「熟悉長者服務」</strong> — 你熟悉嘅係「社署長者服務嘅架構同條文」。呢個分別好重要，面試官一追問就知你講大咗。</p>
+  </div>
+</section>
+
+<!-- ⑧ -->
+<section id="src">
+  <h2><span class="n">8</span>資料來源</h2>
+  <p class="lede">全部一手，2026年11月10日查核。</p>
+  <ol class="src">
+    <li><span class="doc">長者地區中心及長者鄰舍中心名單及電話（41間＋175間）</span><span class="org">社會福利署｜截至2026年11月9日</span><a href="https://www.swd.gov.hk/storage/asset/section/1216/List_of_DECCs_NECs.pdf" target="_blank" rel="noopener">swd.gov.hk/storage/asset/section/1216/List_of_DECCs_NECs.pdf</a></li>
+    <li><span class="doc">「長者地區中心」服務單張（服務內容14項）</span><span class="org">社會福利署｜2025年3月</span><a href="https://www.swd.gov.hk/storage/asset/section/1216/tc/DECC(V8)%20-%20Traditional%20Chinese_v2.pdf" target="_blank" rel="noopener">swd.gov.hk/storage/asset/section/1216/tc/DECC(V8)…pdf</a></li>
+    <li><span class="doc">「長者鄰舍中心」服務單張（服務內容11項）</span><span class="org">社會福利署</span><a href="https://www.swd.gov.hk/storage/asset/section/1216/tc/NEC(V7)%20-%20Traditional%20Chinese_v2.pdf" target="_blank" rel="noopener">swd.gov.hk/storage/asset/section/1216/tc/NEC(V7)…pdf</a></li>
+    <li><span class="doc">Sample FSA for DECC（基本服務規定、服務量標準）</span><span class="org">社會福利署｜現行</span><a href="https://www.swd.gov.hk/storage/asset/section/1227/tc/Sample%20FSA%20for%20DECC_T_Chi.pdf" target="_blank" rel="noopener">swd.gov.hk/storage/asset/section/1227/tc/Sample FSA for DECC_T_Chi.pdf</a></li>
+    <li><span class="doc">Sample FSA for NEC</span><span class="org">社會福利署｜2025年10月1日生效</span><a href="https://www.swd.gov.hk/storage/asset/section/1227/tc/Sample%20FSA%20for%20NEC_T_Chi.pdf" target="_blank" rel="noopener">swd.gov.hk/storage/asset/section/1227/tc/Sample FSA for NEC_T_Chi.pdf</a></li>
+    <li><span class="doc">Sample FSA for SE（長者活動中心）</span><span class="org">社會福利署</span><a href="https://www.swd.gov.hk/storage/asset/section/1227/tc/Sample%20FSA%20for%20SE_TC.pdf" target="_blank" rel="noopener">swd.gov.hk/storage/asset/section/1227/tc/Sample FSA for SE_TC.pdf</a></li>
+    <li><span class="doc">非政府機構一般職位之薪級表（SWO MPS 34–47／ASWO 16–33）</span><span class="org">社會福利署｜2026年4月1日生效</span><a href="https://www.swd.gov.hk/storage/asset/section/586/tc/Salary_Scale_of_Common_Posts.pdf" target="_blank" rel="noopener">swd.gov.hk/storage/asset/section/586/tc/Salary_Scale_of_Common_Posts.pdf</a></li>
+    <li><span class="doc">救世軍「中心主任（大窩口）」招聘廣告</span><span class="org">救世軍社會服務部｜2025年8月｜起薪$42,640</span><a href="https://salvationarmy.org.hk/wp-content/uploads/2025/08/8-Aug-2025.pdf" target="_blank" rel="noopener">salvationarmy.org.hk/wp-content/uploads/2025/08/8-Aug-2025.pdf</a></li>
+    <li><span class="doc">社會工作主任職系職責（SWO）</span><span class="org">公務員事務局職系資料</span><a href="https://civilservice.ctgoodjobs.hk/grades/231/social-work-officer-swo-grade" target="_blank" rel="noopener">civilservice.ctgoodjobs.hk/grades/231/social-work-officer-swo-grade</a></li>
+    <li><span class="doc">長者中心服務頁</span><span class="org">社會福利署｜修訂2026年11月9日</span><a href="https://www.swd.gov.hk/tc/pubsvc/elderly/cat_commsupp/elderly_centres/" target="_blank" rel="noopener">swd.gov.hk/tc/pubsvc/elderly/cat_commsupp/elderly_centres/</a></li>
+    <li><span class="doc">社區中心服務頁（13間）</span><span class="org">社會福利署｜覆檢2025年12月12日</span><a href="https://www.swd.gov.hk/tc/pubsvc/comm/commcenter/index.html" target="_blank" rel="noopener">swd.gov.hk/tc/pubsvc/comm/commcenter/index.html</a></li>
+    <li><span class="doc">SWO 入職條件（註冊社工＋社會工作學位）</span><span class="org">公務員事務局投考表格／GovJobWiki 整理</span><a href="https://www.govjobwiki.com/grades/Social-Work-Officer/" target="_blank" rel="noopener">govjobwiki.com/grades/Social-Work-Officer/</a></li>
+  </ol>
+</section>
+
+</div>
+
+<footer>
+  全部數字同條文引自社會福利署一手文件，於 <b>2026年11月10日</b> 查核｜FSA 樣本只供參考，實際條款以社署發出的要約及通知書為準<br>
+  <span style="opacity:.65">本頁為面試準備用途，非官方文件；如與社署最新公布有異，以社署為準。</span>
+</footer>
+
+<script>
+const links=[...document.querySelectorAll('nav a')];
+const secs=links.map(a=>document.querySelector(a.getAttribute('href')));
+const io=new IntersectionObserver(es=>{es.forEach(e=>{if(e.isIntersecting){links.forEach(l=>l.classList.remove('on'));
+const i=secs.indexOf(e.target);if(i>=0)links[i].classList.add('on');}});},{rootMargin:'-20% 0px -70% 0px'});
+secs.forEach(s=>s&&io.observe(s));
+</script>
+</body>
+</html>
