@@ -1,0 +1,483 @@
+<!DOCTYPE html>
+<html lang="zh-Hant-HK">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>社區綜合服務部 主任 面試問題庫｜23條問題 + 建議答法</title>
+<style>
+:root{--ink:#12283a;--ink2:#4a6377;--paper:#f6f3ed;--card:#fff;--line:#ddd6c7;
+--gold:#a8790c;--gold2:#c9971a;--teal:#0c6f6a;--rose:#a8414d;--violet:#57478a;
+--shadow:0 2px 9px rgba(18,40,58,.07)}
+*{box-sizing:border-box}
+body{margin:0;background:var(--paper);color:var(--ink);
+font-family:"Noto Sans TC","PingFang HK","Microsoft JhengHei",-apple-system,sans-serif;
+line-height:1.66;-webkit-font-smoothing:antialiased}
+.wrap{max-width:1140px;margin:0 auto;padding:0 20px 90px}
+
+header{background:linear-gradient(155deg,#12283a,#22485c 55%,#2f5f6d);color:#f6f3ed;
+padding:42px 20px 34px;text-align:center;position:relative;overflow:hidden}
+header::after{content:"";position:absolute;inset:0;
+background:radial-gradient(circle at 14% 18%,rgba(201,151,26,.20),transparent 45%),
+radial-gradient(circle at 86% 78%,rgba(12,111,106,.22),transparent 42%);pointer-events:none}
+header>*{position:relative;z-index:1}
+header h1{margin:0 0 8px;font-size:clamp(1.3rem,3.5vw,2.05rem);font-weight:800}
+header .sub{color:#c8d5df;max-width:820px;margin:0 auto 14px;font-size:.92rem}
+.chips{display:flex;flex-wrap:wrap;gap:8px;justify-content:center}
+.chip{background:rgba(255,255,255,.09);border:1px solid rgba(255,255,255,.2);
+padding:5px 13px;border-radius:99px;font-size:.78rem}
+.chip b{color:var(--gold2)}
+
+nav{position:sticky;top:0;z-index:40;background:rgba(246,243,237,.96);
+backdrop-filter:blur(9px);border-bottom:1px solid var(--line)}
+nav .in{max-width:1140px;margin:0 auto;padding:9px 20px;display:flex;gap:4px;overflow-x:auto;scrollbar-width:none}
+nav .in::-webkit-scrollbar{display:none}
+nav a{white-space:nowrap;font-size:.8rem;color:var(--ink2);text-decoration:none;padding:6px 11px;border-radius:7px}
+nav a:hover,nav a.on{background:var(--ink);color:#f6f3ed}
+
+section{padding-top:42px}
+h2{font-size:clamp(1.08rem,2.6vw,1.4rem);margin:0 0 6px;font-weight:800;display:flex;align-items:center;gap:10px;flex-wrap:wrap}
+h2 .n{background:var(--ink);color:var(--gold2);font-size:.72rem;font-weight:800;min-width:26px;height:26px;
+display:inline-flex;align-items:center;justify-content:center;border-radius:7px;padding:0 7px;flex:none}
+h2 .tag{font-size:.68rem;font-weight:700;color:#fff;background:var(--gold);padding:3px 10px;border-radius:99px}
+.lede{color:var(--ink2);font-size:.92rem;margin:0 0 18px;max-width:900px}
+
+.card{background:var(--card);border:1px solid var(--line);border-radius:13px;padding:19px 22px;box-shadow:var(--shadow);margin-bottom:14px}
+
+/* hero org card */
+.hero{background:linear-gradient(140deg,#12303f,#1f4d5e);color:#f0ece3;border-radius:14px;padding:22px 24px;margin-bottom:16px;box-shadow:var(--shadow)}
+.hero h3{margin:0 0 4px;font-size:1.12rem}
+.hero .en{font-size:.78rem;color:#a9c0cb;font-style:italic;margin-bottom:12px}
+.hero .grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(215px,1fr));gap:12px;margin-top:6px}
+.hero .gi{background:rgba(255,255,255,.07);border:1px solid rgba(255,255,255,.13);border-radius:9px;padding:11px 13px}
+.hero .gi .k{font-size:.68rem;font-weight:800;color:var(--gold2);text-transform:uppercase;letter-spacing:.05em;display:block;margin-bottom:3px}
+.hero .gi .v{font-size:.88rem;line-height:1.55}
+
+/* cluster cards */
+.cl{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:13px}
+.c{border-radius:12px;padding:15px 17px;color:#fff}
+.c h4{margin:0 0 6px;font-size:.95rem}
+.c ul{margin:6px 0 0;padding-left:17px;font-size:.83rem}
+.c li{margin-bottom:4px}
+.c .n{font-size:.72rem;opacity:.85;font-weight:700}
+
+/* Q cards */
+.q{background:var(--card);border:1px solid var(--line);border-left:5px solid var(--teal);
+border-radius:11px;padding:17px 20px;margin-bottom:13px;box-shadow:var(--shadow)}
+.q.gold{border-left-color:var(--gold)}
+.q.rose{border-left-color:var(--rose)}
+.q.violet{border-left-color:var(--violet)}
+.q .qh{font-weight:800;font-size:1rem;margin-bottom:4px;display:flex;gap:9px;align-items:baseline;flex-wrap:wrap}
+.q .qh .qn{background:var(--ink);color:var(--gold2);font-size:.68rem;min-width:24px;height:24px;
+display:inline-flex;align-items:center;justify-content:center;border-radius:6px;padding:0 6px;flex:none;font-weight:800}
+.q .cluster{font-size:.7rem;font-weight:700;color:#fff;background:var(--teal);padding:2px 9px;border-radius:99px}
+.q.gold .cluster{background:var(--gold)} .q.rose .cluster{background:var(--rose)} .q.violet .cluster{background:var(--violet)}
+.q .ask{color:var(--ink);font-weight:600;font-size:.93rem;margin:6px 0 10px}
+.q .ans{font-size:.9rem;background:#faf8f3;border-radius:9px;padding:13px 15px;margin-bottom:9px}
+.q .ans b{color:var(--ink)}
+.q .cue{font-size:.82rem;color:var(--ink2);border-left:3px solid var(--line);padding-left:11px;margin-bottom:8px}
+.q .cue strong{color:var(--teal)}
+.q .ev{font-size:.76rem;color:#fff;background:var(--ink);border-radius:8px;padding:9px 12px}
+.q .ev b{color:var(--gold2)}
+
+/* tables */
+.tw{overflow-x:auto;margin:12px 0}
+table{width:100%;border-collapse:collapse;font-size:.85rem;min-width:540px}
+th,td{padding:9px 13px;text-align:left;border-bottom:1px solid var(--line);vertical-align:top}
+th{background:#efe9de;font-weight:700;font-size:.77rem;color:var(--ink2);white-space:nowrap}
+tbody tr:last-child td{border-bottom:0}
+
+/* dos / donts */
+.dd{display:grid;grid-template-columns:1fr 1fr;gap:13px}
+@media(max-width:660px){.dd{grid-template-columns:1fr}}
+.dd .d{border-radius:12px;padding:16px 18px;font-size:.86rem}
+.dd .d.y{background:#eff7f5;border:1px solid #b6d9d3}
+.dd .d.n{background:#fdf1f2;border:1px solid #e8b8bd}
+.dd .d h4{margin:0 0 8px;font-size:.92rem}
+.dd .d ul{margin:0;padding-left:18px}
+.dd .d li{margin-bottom:5px}
+
+.gap{background:#fff9f0;border:1px solid #e8caa0;border-left:5px solid var(--gold);border-radius:11px;padding:17px 20px;margin:14px 0}
+.gap h3{margin:0 0 8px;font-size:.96rem;color:#8a5a0b}
+.gap p{margin:0 0 8px;font-size:.87rem;color:var(--ink2)}
+.gap p:last-child{margin:0}
+.gap strong{color:var(--ink)}
+
+.src{counter-reset:s;list-style:none;padding:0;margin:0}
+.src li{counter-increment:s;position:relative;padding:9px 0 9px 34px;border-top:1px dashed var(--line);font-size:.83rem}
+.src li:first-child{border-top:0}
+.src li::before{content:counter(s);position:absolute;left:0;top:9px;width:22px;height:22px;background:var(--ink);
+color:var(--gold2);border-radius:6px;font-size:.71rem;font-weight:800;display:flex;align-items:center;justify-content:center}
+.src a{color:var(--teal);word-break:break-all;font-size:.74rem}
+.src .doc{font-weight:700;display:block}
+
+footer{background:var(--ink);color:#b6c3cd;padding:26px 20px;text-align:center;font-size:.79rem;margin-top:46px}
+footer b{color:var(--gold2)}
+</style>
+</head>
+<body>
+
+<header>
+  <h1>社區綜合服務部 主任 — 面試問題庫</h1>
+  <p class="sub">23 條高概率問題，每條附建議答法 + 重點 + 年報證據錨點</p>
+  <div class="chips">
+    <span class="chip">僱主 <b>旺角街坊會陳慶</b></span>
+    <span class="chip">單位 <b>社區綜合服務部</b></span>
+    <span class="chip">查核 <b>2026-11-10</b></span>
+    <span class="chip">來源 <b>2025/26年報 + 社署FSA</b></span>
+  </div>
+</header>
+
+<nav><div class="in">
+  <a href="#org">① 背景</a>
+  <a href="#duty">② 職責叢</a>
+  <a href="#q1">③ 問題 1–8</a>
+  <a href="#q2">④ 問題 9–16</a>
+  <a href="#q3">⑤ 問題 17–23</a>
+  <a href="#gap">⑥ 空窗期 + 危險題</a>
+  <a href="#src">⑦ 來源</a>
+</div></nav>
+
+<div class="wrap">
+
+<section id="org">
+  <h2><span class="n">1</span>呢個位嘅實際情況 <span class="tag">全部已核實</span></h2>
+
+  <div class="hero">
+    <h3>旺角街坊會 陳慶社會服務中心</h3>
+    <div class="en">The Mongkok Kai-Fong Association Ltd. Chan Hing Social Service Centre</div>
+    <div class="grid">
+      <div class="gi"><span class="k">地址</span><span class="v">九龍大角咀福全街45號<br>電話 2395 3107</span></div>
+      <div class="gi"><span class="k">社署登記單位</span><span class="v">旺角街坊會 - 陳慶社會服務中心<br><b>（社區綜合服務部）</b></span></div>
+      <div class="gi"><span class="k">中心規模</span><span class="v">樓高五層，1980年啟用<br>約 100+ 全職員工，<b>30 位註冊社工</b></span></div>
+      <div class="gi"><span class="k">部門架構</span><span class="v">長者綜合服務部 ＋ <b>社區綜合服務部</b>（你嘅位）</span></div>
+      <div class="gi"><span class="k">經費來源</span><span class="v">社署整筆撥款資助 ＋ 會方籌募</span></div>
+      <div class="gi"><span class="k">區內地位</span><span class="v"><b>油尖旺區只有 1 間社區中心</b>，就係佢</span></div>
+    </div>
+  </div>
+
+  <div class="card">
+    <h3 style="margin:0 0 12px;font-size:1rem">社區綜合服務部架構（年報，職員名錄至 2026-03-31）</h3>
+    <div class="tw">
+    <table>
+      <thead><tr><th>層級</th><th>編制</th><th>你嘅工作對象</th></tr></thead>
+      <tbody>
+        <tr><td><b>社區綜合服務部主任</b></td><td>1</td><td>← 呢個就係你個位</td></tr>
+        <tr><td>社區綜合服務一隊</td><td>隊長 1 ＋ 社工 1 ＋ 活動幹事 1</td><td>督導對象</td></tr>
+        <tr><td>社區綜合服務二隊</td><td>隊長 1 ＋ 社工 6</td><td>督導對象</td></tr>
+        <tr><td>社區綜合服務三隊</td><td>隊長 1 ＋ 社工 2 ＋ 資訊科技幹事 1</td><td>督導對象</td></tr>
+        <tr><td><b>家庭支援網絡隊</b></td><td>隊長 1 ＋ 社工 3 ＋ 活動幹事 1</td><td>外展、轉介、劏房／簡樸房支援</td></tr>
+        <tr><td>進修課程組</td><td>隊長 1 ＋ 活動幹事 2</td><td>督導對象</td></tr>
+      </tbody>
+    </table>
+    </div>
+    <p style="font-size:.86rem;color:var(--ink2);margin:10px 0 0"><b>實際意義：</b>你有 <b>4 個隊長</b>（一隊、二隊、三隊、家庭支援網絡隊）＋ 進修課程組隊長要做專業督導，之下有 <b>13 位社工</b>。呢個督導跨度同你督導主任時期（2 隊 PPI 社工 ＋ 小組之家）同量級——<b>呢個係你最強嘅一點，要主動講。</b></p>
+  </div>
+
+  <div class="card">
+    <h3 style="margin:0 0 10px;font-size:1rem">12 項服務（其中 6 項直接對口你背景）</h3>
+    <div class="tw">
+    <table>
+      <thead><tr><th>服務</th><th>對象</th><th>同你背景</th></tr></thead>
+      <tbody>
+        <tr><td><b>家庭支援網絡服務</b></td><td>失業、低收入、綜援、單親、親職困難家庭</td><td><b>直接對口</b> — 外展、轉介、面談諮詢</td></tr>
+        <tr><td><b>家庭服務</b></td><td>單親支援、綜緩家庭、夫婦關係、<b>親子教育</b></td><td><b>直接對口</b> — 親子教育＋家長小組</td></tr>
+        <tr><td><b>學童課餘託管服務</b></td><td>雙職／單親家庭、小一至小五</td><td><b>直接對口</b> — 學童支援</td></tr>
+        <tr><td><b>新來港人士服務</b></td><td>來港三年內定居人士、學童</td><td><b>直接對口</b> — 兒童適應、功課輔導</td></tr>
+        <tr><td><b>非華裔人士服務</b></td><td>少數族裔兒童、婦女</td><td>兒童小組、輔導</td></tr>
+        <tr><td>公民教育及青年發展</td><td>油尖旺區中學生</td><td>學校協作、領袖訓練</td></tr>
+        <tr><td>就業支援服務</td><td>區內求職者</td><td>就業輔導、技能訓練</td></tr>
+        <tr><td>婦女服務</td><td>區內婦女</td><td>小組、藝術介入</td></tr>
+        <tr><td>樓宇管理及復修支援</td><td>30年以上舊樓業主</td><td>社區工作</td></tr>
+        <tr><td>「消防安全指示」支援</td><td><b>247 幢大廈</b>（民政事務處委派）</td><td>社區工作</td></tr>
+        <tr><td>閱讀及自修室／數碼社區支援中心</td><td>青少年、學生</td><td>場地服務</td></tr>
+        <tr><td>進修課程</td><td>區內居民</td><td>課程管理</td></tr>
+      </tbody>
+    </table>
+    </div>
+  </div>
+
+  <div class="card">
+    <h3 style="margin:0 0 10px;font-size:1rem">家庭支援網絡隊年度數據（你最需要引用嗰組）</h3>
+    <div class="tw">
+    <table>
+      <thead><tr><th>指標</th><th>議定／實績</th><th>面試點解要提</th></tr></thead>
+      <tbody>
+        <tr><td>外展新接觸家庭數目</td><td><b>1,328</b></td><td>證明外展係主力服務，唔係辦公室等緊人上門</td></tr>
+        <tr><td>成功轉介有需要家庭</td><td><b>1,188</b></td><td>轉介率約 89.5% — 呢個係專業判斷，唔係轉介機器</td></tr>
+        <tr><td>新招募義工</td><td><b>206</b></td><td>義工係成本效益最高嘅資源</td></tr>
+        <tr><td>增加社區及福利認知</td><td><b>89.61%</b></td><td>證明「增加求助動機」呢個目標有數據支撐</td></tr>
+        <tr><td>改善社區網絡</td><td><b>87.95%</b></td><td>同上</td></tr>
+      </tbody>
+    </table>
+    </div>
+    <p style="font-size:.84rem;color:var(--ink2);margin:10px 0 0">服務範圍：旺角及大角咀，圍繞<b>海輝道、界限街、彌敦道、亞皆老街及櫻桃街</b>一帶。已開辦小組包括「大角咀大廈劏房街坊互助小組」、「櫻桃大廈劏房街坊互助小組」、「大角咀劏房關注組」、「簡約公屋生活探索小組」、「簡樸房關注組」。</p>
+  </div>
+</section>
+
+<section id="duty">
+  <h2><span class="n">2</span>主任級嘅四個職責叢</h2>
+  <p class="lede">23 條問題全部掛喺呢四個叢上。呢個分類同時對應社署 SWO 職系嘅「管理或協助管理…中心、規劃和發展服務、統籌和監察、持份者聯繫」。</p>
+
+  <div class="cl">
+    <div class="c" style="background:var(--teal)">
+      <h4>A. 單位管理與行政</h4>
+      <span class="n">中心日常運作、財政、人事、服務策劃</span>
+      <ul><li>寫計劃書、匯報、年度檢討</li><li>財政管理、資源分配</li><li>招聘、督導、表現管理</li><li>處理投訴、複雜個案</li></ul>
+    </div>
+    <div class="c" style="background:var(--gold)">
+      <h4>B. 服務發展與質素</h4>
+      <span class="n">訂方向、監察表現、發展新服務</span>
+      <ul><li>服務量指標與成效監察</li><li>新增服務設計與試點</li><li>跨部門服務協調</li><li>資源連結與配對</li></ul>
+    </div>
+    <div class="c" style="background:var(--rose)">
+      <h4>C. 人手督導與團隊發展</h4>
+      <span class="n">督導 4 隊 ＋ 13 位社工</span>
+      <ul><li>定期督導、專業指導</li><li>在職訓練、教材</li><li>個案覆核、專業反思</li><li>表現問題處理</li></ul>
+    </div>
+    <div class="c" style="background:var(--violet)">
+      <h4>D. 社區網絡與持份者</h4>
+      <span class="n">政府部門、學校、持份者、資源</span>
+      <ul><li>民政事務處、消防處、屋宇署</li><li>中電、ERB、機電工程署</li><li>學校、聖公會、大學</li><li>地區持份者與法團</li></ul>
+    </div>
+  </div>
+</section>
+
+<section id="q1">
+  <h2><span class="n">3</span>問題 1–8：定位、服務發展、督導</h2>
+
+  <div class="q gold"><div class="qh"><span class="qn">1</span>「你做咗咁多年兒童家庭，而家點解想做社區中心？」<span class="cluster">定位</span></div>
+    <div class="ask">咁你之前都係做兒童及家庭服務，而家轉去社區綜合服務部，係咩原因？</div>
+    <div class="ans"><b>答：</b>「我想做嘅唔係轉跑道，係<b>擴闊我做緊嗰件事</b>。督導主任嗰四年我做晒四樣嘢：訂服務方向、寫指引同指標、督導團隊、檢討服務質素——呢四樣正正就係中心主任嘅工作內容，我唔係想學做主任，我做過嗰部分。<br><br>而且你哋呢個部唔係淨係做活動。你哋有<b>家庭支援網絡服務</b>——一年外展新接觸 1,328 個家庭、成功轉介 1,188 個，仲有<b>家庭服務</b>做單親支援、綜緩家庭支援、親子教育，<b>學童課餘託管</b>，<b>新來港人士</b>同<b>非華裔人士</b>服務。呢啲正正就係我做咗12年嘅嘢——<b>我唔係完全外來</b>。<br><br>我自己有單親家庭支援、綜緩家庭支援、親子教育、兒童課餘託管嗰啲工作嘅底子。你哋中心嘅家庭服務，其實同我做過嘅嘢直接對得上。<br><br>我要補嘅係社區層面嘅實務細節，我唔會扮我識。」</div>
+    <div class="cue"><strong>重點：</strong>呢題係<b>全場最重要</b>。要打「擴闊」而唔係「轉跑道」，即刻列出 5 項對口服務，然後守住誠實界線。</div>
+    <div class="ev"><b>年報證據：</b>家庭支援網絡服務（外展1,328／轉介1,188）；家庭服務（單親、綜緩、夫婦關係、親子教育）；學童課餘託管；新來港人士服務；非華裔人士服務。</div>
+  </div>
+
+  <div class="q gold"><div class="qh"><span class="qn">2</span>「你點解適合做主任，而唔係做前線社工？」<span class="cluster">定位</span></div>
+    <div class="ask">你做過督導主任，而家想返做主任位，你會點分工？</div>
+    <div class="ans"><b>答：</b>「我唔係想做返前線，但我亦唔會因為升咗職就離開前線。呢個位嘅日常其實有一半時間係喺度同前線一齊諗、同一齊去。<br><br>我做督導主任嗰4年，實際上係做緊三層嘢：<b>第一層係服務</b>——我會自己接需要臨床判斷嘅個案，因為呢啲先至係專業底線，唔係為咗「我有嘢做」，而係社工做唔到臨床決定就會卡住。仲有遊戲治療、小組，我本身就做。<b>第二層係督導</b>——4 個隊長、13 位社工要專業指導同在職訓練。<b>第三層係中心</b>——指標、財政、持份者。<br><br>主任唔係唔做嘢，主任係<b>做啱嗰啲嘢</b>。」</div>
+    <div class="cue"><strong>重點：</strong>三層分工（服務／督導／中心）——呢個框架直接對應你實際架構（4隊長、13社工）。<b>「主任唔係唔做嘢，主任係做啱嗰啲嘢」</b>係一句好記嘅金句。</div>
+    <div class="ev"><b>年報證據：</b>社區綜合服務部 4 隊 ＋ 家庭支援網絡隊 ＋ 進修課程組；社工共 13 位 ＋ 4 位隊長 ＋ 資訊科技幹事、活動幹事。</div>
+  </div>
+
+  <div class="q gold"><div class="qh"><span class="qn">3</span>「你頭三個月會點樣做？」<span class="cluster">B 服務發展</span></div>
+    <div class="ask">如果你入職做呢個主任，你頭三個月嘅計劃係咩？</div>
+    <div class="ans"><b>答：</b>「我會分三步，而且呢個順序好重要。<br><br><b>第一，讀清楚合約同現況。</b>社區中心受社署整筆撥款資助，服務量指標係季度要交嘅——所以我會先攞齊各隊嘅指標同實際數據，睇差距喺邊度，<b>唔會一開始就開新活動</b>。<br><br><b>第二，見人。</b>我會逐隊傾，聽前線講邊啲位最難、邊啲轉介唔通。家庭支援網絡隊嗰組數字——89.61% 增加社區及福利認知、87.95% 改善社區網絡——睇落好，但呢啲數字背後係點樣做成，我要去現場睇先知。<br><br><b>第三，先定方向。</b>用數據同前線輸入，揀一到兩個最值得做嘅重點，寫低指標同檢討時間。<br><br>我做督導主任嗰陣最痛嘅一課就係：<b>活動開得多唔等於服務做得好。</b> 我唔會重複嗰個錯誤。但我唔會扮我已經知道你哋嘅實際情況——頭三個月就係去學識佢。」</div>
+    <div class="cue"><strong>重點：</strong>「先讀合約 → 再見人 → 再定方向」。要提<b>季度交指標</b>呢個現實（整筆撥款要交季度統計報表）。</div>
+    <div class="ev"><b>法規依據：</b>社署 Multi-programme Integrated Service (Type 1) FSA：主基地每週最少開放 6 日／48 小時；<b>所有服務都要有註冊社工</b>；一年內新會員及續會員總數議定水平 2,252；核心項目／治療／支援／教育／發展／互助小組節數議定水平 2,056；服務成效（出席者滿意）75%。服務量<b>按季度向社署匯報</b>。</div>
+  </div>
+
+  <div class="q gold"><div class="qh"><span class="qn">4</span>「你會點樣發展新服務？社區中心咁多年，仲有咩好做？」<span class="cluster">B 服務發展</span></div>
+    <div class="ask">社區中心成日做開，你會點樣搵到新方向？</div>
+    <div class="ans"><b>答：</b>「我嘅方法係<b>唔係『有咩想做』，而係『邊啲人未被服務到』</b>。你哋家庭支援網絡隊已經做緊劏房、簡樸房、公屋申請、電費補助呢啲，證明最sharp嘅需要係住屋同生計。<br><br>所以我會睇三樣嘢：<b>第一，轉介咗出去之後點</b>——成功轉介 1,188 個家庭入面，有幾多真係接觸到服務？中間邊個位斷咗？<b>第二，未被接觸嘅係邊啲人</b>——街站同外展接觸到嘅，係咪已經係比較易搵嗰批？<b>第三，跨隊嘅斷點</b>——家庭支援網絡隊轉介入去嘅家庭，同學童課餘託管、新來港人士服務有冇銜接好？<br><br>我做督導主任嗰4年做過服務發展，我嘅習慣係<b>先睇轉介斷點，唔係先開新活動</b>。因為新活動容易做，但接唔住就冇意思。」</div>
+    <div class="cue"><strong>重點：</strong>用「<b>轉介斷點</b>」做框架——呢個係主任級思考，同一般社工「我想開個班」完全不同。</div>
+    <div class="ev"><b>年報證據：</b>家庭支援網絡隊：成功轉介 1,188 個家庭；已開辦「簡樸房關注組」、「簡約公屋生活探索小組」、「大角咀劏房關注組」、「簡樸房及租務管制WhatsApp資訊群組」、「劏房電力安全講座」；原動力基金應急支援；中電基層家庭電費補助計劃 850 個名額（額滿）；為 106 個基層家庭及劏房住戶辦中醫義診暨電力安全分享會。</div>
+  </div>
+
+  <div class="q"><div class="qh"><span class="qn">5</span>「你會點處理一個做得唔好嘅同工？」<span class="cluster">C 團隊督導</span></div>
+    <div class="ask">如果 team 裡面有個同事工作質素唔得，你會點做？</div>
+    <div class="ans"><b>答：</b>「我會分三步，唔會跳過。<b>第一，睇事實唔聽標籤</b>——係工作流程唔清楚、係工作量分配唔均，定係真係專業判斷有問題？<b>第二，直接講</b>——用返個案同記錄講，唔用『你態度有問題』呢類說話。<b>第三，同佢訂清楚改善步驟同時間</b>，再跟進。<br><br>我做督導主任管理過同事嘅表現問題，學到最有用嘅一句：<b>督導唔係叫人變好，係話清楚咩要改同點樣改。</b> 如果真係改善唔到、影響服務，我亦都識按程序做。」</div>
+    <div class="cue"><strong>重點：</strong>要配一個真實例子（STAR）。<b>「督導唔係叫人變好，係話清楚咩要改同點樣改」</b>係你嘅金句。</div>
+    <div class="ev"><b>提醒：</b>你實際管理過 2 隊 PPI 社工 ＋ 小組之家（2019年8月–2023年10月）。數字要同 Resume 一致，唔記得就講變化。</div>
+  </div>
+
+  <div class="q"><div class="qh"><span class="qn">6</span>「你會點樣督導 4 個隊？」<span class="cluster">C 團隊督導</span></div>
+    <div class="ask">你上面有 4 個隊長，下面 13 位社工，你點樣確保質素一致？</div>
+    <div class="ans"><b>答：</b>「我會用三層。<b>第一層係交俾隊長做</b>——主任唔會跳過隊長直接指派社工，否則隊長會冇權威、我也會變成「投訴主任」。我做督導主任嗰陣就係守住呢條線：<b>臨床專業我介入，日常表現由隊長跟</b>。<br><br><b>第二層係統一標準</b>——你哋家庭支援網絡隊嘅轉介有咗明確框架（先評估處境，再按需要轉介，超越範圍就轉介專業單位），我會確保其他隊嘅轉介邏輯同樣清晰，因為<b>服務使用者唔應該因為入咗唔同隊而得到唔同標準</b>。<br><br><b>第三層係我親自做抽覆檢</b>——每季抽幾個個案同外展紀錄睇，唔係靠隊長報告。<br><br>督導主任嗰4年我最大嘅體會係：<b>主任最有用嘅時間，係用喺臨床判斷同專業指導，唔係行政。</b>」</div>
+    <div class="cue"><strong>重點：</strong>三層（隊長做／統一標準／主任抽覆檢）。<b>「主任最有用嘅時間用喺臨床判斷，唔係行政」</b>——呢句好專業。</div>
+    <div class="ev"><b>年報證據：</b>團隊結構：一隊（隊長1+社工1+活動幹事1）、二隊（隊長1+社工6）、三隊（隊長1+社工2+資訊科技幹事1）、家庭支援網絡隊（隊長1+社工3+活動幹事1）、進修課程組（隊長1+活動幹事2）。FSA 規定所有服務須有註冊社工，家庭個案工作者須為註冊社工。</div>
+  </div>
+
+  <div class="q"><div class="qh"><span class="qn">7</span>「你點樣確保服務質素，唔會變成淨係做活動？」<span class="cluster">B 服務發展</span></div>
+    <div class="ask">社區中心好多活動，你點樣確保服務唔會流於形式？</div>
+    <div class="ans"><b>答：</b>「我用三層保證。<b>第一層係合約</b>——你哋受社署整筆撥款資助，有明確嘅服務量指標（會員、小組節數、轉介），同 16 項服務質素標準，呢啲係底線，我會要求團隊知。<br><br><b>第二層係成效唔係出席</b>。你哋家庭支援網絡隊最值得留意嘅係：外展 1,328 個家庭，成功轉介 1,188 個，同時<b>89.61% 增加咗社區及福利認知、87.95% 改善咗社區網絡</b>。呢啲唔係活動數，係<b>服務有冇真正改變到人嘅狀況</b>。<br><br><b>第三層係抽覆檢</b>——唔靠感覺。<br><br>我做督導主任嗰陣最深嘅一課：<b>活動開得多唔等於服務做得好。</b> 所以我會用轉介之後發生咩事嚟量度，唔係用簽到人數。」</div>
+    <div class="cue"><strong>重點：</strong>三層（合約標準 → 成效 vs 出席 → 抽覆檢）。<b>用「簽到人數」對比「轉介後結果」</b>係你嘅專業立場。</div>
+    <div class="ev"><b>年報＋法規：</b>FSA 服務量按季度匯報；服務成效指標（核心項目出席者滿意）75%；年報服務成效表列有「增加社區及福利認知的家庭比率 89.61%」「改善社區網絡的家庭比率 87.95%」。</div>
+  </div>
+
+  <div class="q"><div class="qh"><span class="qn">8</span>「你做過嘅親子教育／家長工作坊，有咩成效？」<span class="cluster">B 服務發展</span></div>
+    <div class="ask">你之前做學前教育，家長工作坊嗰part，你點樣衡量成效？</div>
+    <div class="ans"><b>答：</b>「我唔會只用出席率。我會分三層睇：<b>第一層參與</b>——有幾多家長出席、出席幾多次；<b>第二層改變</b>——家長返到屋企有冇試到新嘅方法（我會用簡單嘅回饋問句，唔係問「滿意唔滿意」而係問「你試咗咩、有冇用」）；<b>第三層結果</b>——小朋友嘅行為有冇變。<br><br>我做督導主任嗰陣有個深刻教訓：家長工作坊出席率低，唔一定係宣傳唔夠，有時係<b>時間唔啱、或者家長一個人帶唔到兩個小朋友出嚟</b>。我哋逐個打電話問返，先知道真正嘅阻礙。<br><br>呢個方法我想帶落你哋——因為你哋家庭服務都有<b>管教子女講座、家長支援小組同親子活動</b>，同一套邏輯係通嘅。」</div>
+    <div class="cue"><strong>重點：</strong>三層量度（參與→改變→結果）+ 一次真實教訓。<b>呢題係你最強嘅位</b>，因為中心家庭服務真係有親子教育。</div>
+    <div class="ev"><b>對接：</b>陳慶家庭服務第 4 項「親子教育——提供管教子女講座，家長支援小組及親子活動」；第 5 項「家庭康樂活動」；第 6 項「電話及面談諮詢服務（管教子女、夫婦相處、婚姻問題、子女讀書困難、福利服務）」。</div>
+  </div>
+</section>
+
+<section id="q2">
+  <h2><span class="n">4</span>問題 9–16：風險、情境、社區網絡</h2>
+
+  <div class="q rose"><div class="qh"><span class="qn">9</span>「如果服務使用者懷疑被虐待／被忽略，你點做？」<span class="cluster">風險</span></div>
+    <div class="ask">社區中心接觸緊好多隱蔽長者同基層家庭，如果有虐待或者忽略風險，你第一步會做咩？</div>
+    <div class="ans"><b>答：</b>「第一步係<b>保障安全</b>，第二步係<b>按程序</b>，唔係自己查完先講。<br><br>社區中心嘅特點係服務接觸面闊——外展、街站、面談、轉介都可能撞到風險個案，<b>而且隱蔽長者正正係最難自己出嚟求助嗰批</b>，所以外展本身已經係一種及早識別。<br><br>程序上我會按社署嘅保護長者程序呈報，<b>唔可以自行判斷『應該冇事』就唔報</b>，唔可以私下同家人『傾下』就算。同時即刻記錄，顧及服務使用者嘅尊嚴同私隱，唔可以喺中心內部傳開。<br><br>我做兒童保護嗰陣學到最硬嘅一課就係：<b>唔懷疑唔等於唔需要呈報。</b>」</div>
+    <div class="cue"><strong>重點：</strong>「<b>唔懷疑唔等於唔需要呈報</b>」。<b>你兒童保護嘅訓練係呢題最強嘅資產</b>——提你已攞咗「保護兒童網上課程」電子證書。</div>
+    <div class="ev"><b>補充：</b>年報顯示中心已做「《強制舉報虐待兒童條例》分享」；非華裔服務亦有「近年因婚姻關係尋求中心協助的個案有上升趨勢」——家庭暴力係現實議題。</div>
+  </div>
+
+  <div class="q rose"><div class="qh"><span class="qn">10</span>「公屋申請、租務權益呢啲服務，中心做點解要介入？」<span class="cluster">D 社區網絡</span></div>
+    <div class="ask">住屋政策唔係社工專業範圍，中心點解要幫居民處理公屋申請？</div>
+    <div class="ans"><b>答：</b>「因為<b>專業唔係分界線，係介入點</b>。對一個住緊劏房、每月收入唔穩定嘅家庭，公屋申請唔成功唔止係住得差，係<b>小朋友嘅學習環境、家長嘅工作穩定性、情緒健康全部連住</b>。<br><br>社區中心嘅角色唔係取代專業單位，而係<b>做接入點</b>——將有需要嘅人喺需要嘅時候接到正確嘅服務。你哋家庭支援網絡隊做嘅租務權益、公屋申請、經濟援助、實物援助，正正就係令服務唔會『識轉介但接唔住』。<br><br>我做兒童家庭服務嗰4年，見過好多家庭嘅核心壓力其實唔係『唔識管教』，而係<b>收入、住屋、時間三樣嘢夾埋一齊</b>。所以我完全理解點解呢個位要做呢啲——<b>唔處理根源，後面嘅輔導就係治標</b>。」</div>
+    <div class="cue"><strong>重點：</strong>「<b>專業唔係分界線，係介入點</b>」＋「<b>唔處理根源，後面嘅輔導就係治標</b>」。呢個係你對社區中心定位最好嘅詮釋。</div>
+    <div class="ev"><b>年報證據：</b>家庭支援網絡隊轉介服務明確包括「租務權益、住屋申請、經濟援助、實物援助及社區資源」；社區教育工作含「增加認識公屋申請」；原動力基金應急支援；中電電費補助計劃 850 個名額。</div>
+  </div>
+
+  <div class="q rose"><div class="qh"><span class="qn">11</span>「同工質素唔夠但又請唔到人，你點做？」<span class="cluster">A 單位管理</span></div>
+    <div class="ask">如果你接手，人手緊絀，有人做得唔好，你會點處理？</div>
+    <div class="ans"><b>答：</b>「我會先分清楚係<b>能力</b>定<b>狀態</b>問題。能力唔夠要教同督導；狀態問題（工作量過大、情緒）就要先減載。<br><br>實際做法：<b>重新分配</b>工作、喺高風險個案加強支援、必要時縮減低風險活動嘅量去守住核心服務。你哋有 13 位社工分 4 隊，咁跨隊調配係做得到嘅。<br><br>至於請唔到人，我會用唔等於冇——義工、學校義工（你哋新來港服務有 170 位學生義工參與、EdQuity 有 38 位導師配 40 位學員）、大學夥伴（中大、理大）都可以承擔非專業部分，<b>但唔好用義工做專業判斷</b>。<br><br>同總幹事我要主動講清楚，唔係到咗爆煲先講。」</div>
+    <div class="cue"><strong>重點：</strong>「<b>守住核心服務，縮減低風險活動</b>」＋「<b>主動向上反映</b>」。你識得中心有義工網絡可以調配，呢個係具體到令人信服嘅答案。</div>
+    <div class="ev"><b>年報證據：</b>新來港「讀書樂」全年學生義工 170 人參與、提供服務 77 次；EdQuity「成長伴行」38 位義工導師配 40 位學員；中大及理大長期合作；家庭支援網絡隊新招募義工 206 人。</div>
+  </div>
+
+  <div class="q rose"><div class="qh"><span class="qn">12</span>「如果民政事務處或消防處要求中心配合，你會點處理？」<span class="cluster">D 社區網絡</span></div>
+    <div class="ask">你哋中心要做「消防安全指示」支援服務，呢類政府委派工作你點處理？</div>
+    <div class="ans"><b>答：</b>「我會分清楚<b>三類唔同嘅政府關係</b>：<b>第一類係規管</b>——社署嘅合約同服務量指標，呢個係底線，我會確保交到。<b>第二類係委派</b>——好似油尖旺民政事務處委派嘅「消防安全指示」支援服務，服務 247 幢大廈，呢個係信任，我會用專業態度做好，因為呢個係中心喺地區嘅價值來源。<b>第三類係夥伴</b>——消防處、屋宇署、機電工程署、康文署、中電、ERB 呢啲係資源同渠道。<br><br>我做督導主任嗰陣同校長、特殊需要支援團隊傾嘢，學到一件事：<b>同政府部門相處，靠嘅係「對方做得起、我哋做得實」。</b> 唔好淨係表達想合作，要帶住實際例子去。<br><br>所以我會先睇清楚對方嘅規矩同限制，再設計一個雙方都做到嘅方案。」</div>
+    <div class="cue"><strong>重點：</strong>「<b>三類政府關係</b>（規管／委派／夥伴）——呢個分類好成熟，會令人覺得你做過。記住「<b>對方做得起、我哋做得實</b>」。</div>
+    <div class="ev"><b>年報證據：</b>「消防安全指示」支援服務獲油尖旺民政事務處委派，正服務區內 247 幢大廈，屬「油尖旺地區行政主導行動計劃」重點工作；團隊聯絡消防處及屋宇署代表出席業主會議、協助申請「消防安全改善工程資助計劃」；另與機電工程署及電職社會服務協會合作為劏房住戶免費安裝漏電斷路器。</div>
+  </div>
+
+  <div class="q"><div class="qh"><span class="qn">13</span>「你會點發展社區網絡同持份者關係？」<span class="cluster">D 社區網絡</span></div>
+    <div class="ask">點樣令中心喺大角咀建立網絡，唔好只係「有份資訊咁」？</div>
+    <div class="ans"><b>答：</b>「我會先由<b>已經存在嘅關係</b>做起。中心已經有學校（中大、理大、聖公會諸聖中學、拔萃女書院、嘉諾撒聖瑪利）、政府部門（民政處、消防處、屋宇署、機電工程署）、商界（中電、ERB、機電工程署）、地區持份者（法團、廈商會、學校）——呢啲唔係要你去「建立」，係要你去<b>用好</b>。<br><br>我會做三件事：<b>第一，畫一張網絡圖</b>，寫清楚每個持份者我哋可以為佢做咩、佢可以為我哋做咩，搵出<b>仲未用嘅渠道</b>；<b>第二，每年幾個固定合作</b>（唔係每年都重新搵）；<b>第三，發展受眾做義工</b>——你哋家庭支援網絡隊一年招募 206 個義工，呢個已經係一個「有事搵你」嘅網絡。<br><br>我做督導主任嗰陣學到：<b>社區網絡唔係出席多個會，係你有冇一個『有事可以搵你』嘅角色。</b>」</div>
+    <div class="cue"><strong>重點：</strong>「<b>有事搵你</b>」呢個定位 ＋ 三個具體動作（畫網絡圖／固定合作／發展義工）。</div>
+    <div class="ev"><b>年報證據：</b>家庭支援網絡隊新招募義工 206；非華裔服務與不少於 10 間團體合作；公民教育與拔萃女書院、聖公會諸聖中學、嘉諾撒聖瑪利書院、英華書院及德望學校、Funcation Hong Kong、EdQuity 合作；就業支援與 ERB 西九龍服務點（YWCA）及香港職業發展服務處合作；「油尖旺區大廈維修互助組」。</div>
+  </div>
+
+  <div class="q"><div class="qh"><span class="qn">14</span>「你點樣同學校合作？學校社工同中心有咩唔同？」<span class="cluster">D 社區網絡</span></div>
+    <div class="ask">你做過學前教育駐校社工，而家中心同學校有咩合作？</div>
+    <div class="ans"><b>答：</b>「我覺得<b>兩者嘅最大分別係『客戶從邊度嚟』</b>。學校社工係由學校轉介入去，中心係<b>要自己搵人</b>——外展、街站、主動接觸。家庭支援網絡隊一年接觸 1,328 個家庭就係咁嚟嘅。<br><br>呢個分別對主任嚟講好重要：<b>做唔到外展，中心就變成一個等緊人上門嘅地方</b>。而且街站、海報加 WhatsApp 呢啲方法本身就係要有SD督導同人手編排，唔係「有空就去」。<br><br>學校嗰邊我做得最多嘅係<b>建關係</b>：同校長、老師、家長、特殊需要支援團隊每日打交道，識得點樣喺地區持份者之間推動服務。你哋公民教育同青年發展服務有學校協作，我做過同類嘅學校工作。」</div>
+    <div class="cue"><strong>重點：</strong>「<b>學校社工等轉介，中心要自己搵人</b>」——呢個洞察好專業。呢題會令面試官知道你想清楚咗兩個位嘅分別。</div>
+    <div class="ev"><b>年報證據：</b>家庭支援網絡隊外展方法：外展探訪、街頭諮詢站（大廈海報加 WhatsApp 號碼）；新來港「讀書樂」由聖芳濟書院學生義工支援（170 人、77 次服務）；公民教育與多間學校合作。</div>
+  </div>
+
+  <div class="q"><div class="qh"><span class="qn">15</span>「你會點衡量自己做好咗個主任？」<span class="cluster">B 服務發展</span></div>
+    <div class="ask">你會用咩去衡量自己做好咗呢個主任？</div>
+    <div class="ans"><b>答：</b>「四樣。<b>第一，轉介斷咗幾多</b>——家庭支援網絡隊成功轉介 1,188 個家庭，但轉介之後點？呢個係我最想知嘅嘢。<b>第二，隱蔽個案</b>——社區中心嘅價值係搵到唔會自己求助嘅人，劏房、簡樸房、獨居長者嗰批。所以我會睇<b>主動接觸</b>佔幾多，唔係淨睇服務人次。<b>第三，同工</b>——流失率、督導時間有冇真係用喺專業指導而唔係行政。<b>第四，社區位置</b>——中心喺油尖旺區只有一間社區中心，呢個係珍貴嘅位置，我要確保佢真係成為居民嘅第一個求助點。<br><br>呢啲唔全部係我嘅 KPI，但我自己會睇。」</div>
+    <div class="cue"><strong>重點：</strong>四層（轉介結果 → 主動接觸 → 團隊健康 → 社區位置）。<b>「主動接觸 vs 服務人次」</b>呢個對比係好角度。</div>
+    <div class="ev"><b>提醒：</b>服務量標準（會員 2,252／小組節數 2,056／滿意 75%）係合約底線；上面四層係你自己嘅專業判斷，要分清楚邊個係官方指標、邊個係你嘅追求。</div>
+  </div>
+
+  <div class="q"><div class="qh"><span class="qn">16</span>「你會點做員工培訓同在職發展？」<span class="cluster">C 團隊督導</span></div>
+    <div class="ask">中心有咁多類服務，你會點樣培訓同工？</div>
+    <div class="ans"><b>答：</b>「我唔會做 generic 培訓。我會分三層：<b>入職</b>——中心嘅服務對象同咩係專業介入同咩唔係。社區中心最常見嘅風險係將「陪住傾偈」當成輔導，或者將轉介當成交差。<b>在職</b>——針對唔達標嘅位，例如轉介後斷點、劏房住戶嘅特殊需要、樓宇維修的法團運作。<b>專屬</b>——就係中心自己嘅難處，例如「街頭諮詢站」點樣先做到真係接觸到人而唔只係派單張。<br><br>我做督導主任嗰陣做過教材同家長工作坊，深知<b>將一套嘢寫成可以交畀同事直接用嘅指引</b>，比講一堂課有用得多。呢個係我可以即刻帶過嚟嘅嘢。」</div>
+    <div class="cue"><strong>重點：</strong>三層培訓 ＋「<b>將嘢寫成可以直接用嘅指引</b>」——你有教材開發經驗，呢個係實質優勢，唔好唔提。</div>
+    <div class="ev"><b>提醒：</b>FSA 要求所有服務須有註冊社工，專業訓練係合約要求。中心亦有學校義工（中大、理大）及大學夥伴做持續培訓嘅渠道。</div>
+  </div>
+</section>
+
+<section id="q3">
+  <h2><span class="n">5</span>問題 17–23：個人、條件、收尾</h2>
+
+  <div class="q violet"><div class="qh"><span class="qn">17</span>「你做過社區中心嗎？」<span class="cluster">誠實界線</span></div>
+    <div class="ask">你之前都係做兒童家庭，社區中心方面你有咩經驗？</div>
+    <div class="ans"><b>答：</b>「我冇喺社區中心做過，我要老實講。但我做过三樣嘢同呢個位直接相關。<b>第一</b>，我讀過社署社區中心嘅服務規格——受整筆撥款資助、服務量按季度匯報、所有服務須有註冊社工、會員議定水平 2,252、小組節數 2,056，呢啲我記得。<b>第二</b>，我做兒童家庭服務時處理過好多家庭嘅住屋、經濟同照顧壓力，而家先發現嗰啲就係社區中心轉介嘅日常。<b>第三</b>，我睇過你哋嘅年報，包括社區綜合服務部嘅架構同家庭支援網絡隊嘅服務數據。<br><br><b>我要補嘅係社區實務細節，我唔會扮我識。</b>」</div>
+    <div class="cue"><strong>重點：</strong>坦誠 ＋ 即刻補三樣具體嘢。<b>唔好扮</b>——面試官一定會追問「咁你知唔知社區中心要做咩」。</div>
+    <div class="ev"><b>FSA 依據：</b>Multi-programme Integrated Service (Type 1)：服務對象為「社區內所有年齡居民，特別係難以接觸及高風險群體」。</div>
+  </div>
+
+  <div class="q violet"><div class="qh"><span class="qn">18</span>「你嘅弱點係咩？」<span class="cluster">個人</span></div>
+    <div class="ask">你覺得自己有咩不足？</div>
+    <div class="ans"><b>答：</b>「我<b>冇做過社區中心</b>，呢個係實話，唔係包裝。我用咗幾個星期讀社署嘅服務規格、油尖旺區嘅服務單位分佈，同埋你哋嘅年報——包括社區綜合服務部嘅架構同服務數據。<b>見面之前，我已經知道中心做乜、對住邊個、有咩指標。</b><br><br>但我唔會講我已經識做社區中心——我識做管理，管理嘅原理我帶得過去。而且我自己覺得，<b>我最需要學嘅係「大角咀」呢個地區本身</b>：舊區特性、劏房同簡樸房住戶嘅需要、跨區服務嘅差異——呢啲要靠落嚟同團隊一齊傾，<b>睇書睇唔到</b>。」</div>
+    <div class="cue"><strong>重點：</strong>真實弱點 → 具體行動 → 承認邊部分要靠人教。<b>「睇書睇唔到」好過「我適應力強」</b>。</div>
+    <div class="ev"><b>年報證據：</b>家庭支援網絡隊已開辦「大角咀劏房關注組」、「大角咀大廈劏房街坊互助小組」、「簡樸房關注組」——呢啲地區細節只有落嚟先知。</div>
+  </div>
+
+  <div class="q violet"><div class="qh"><span class="qn">19</span>「你期望人工幾多？」<span class="cluster">條件</span></div>
+    <div class="ask">你嘅薪金期望係？</div>
+    <div class="ans"><b>答：</b>「我睇返個職位嘅級別同要求：係註冊社工、ASWO 或以上年資、督導主任職銜，<b>我嘅期望係$45,000–$48,000</b>（月薪）。如果中心有夜津貼或輪值津貼我都 welcome。我更想知中心嘅整體薪酬結構同其他主任級同事嘅水平，等我可以按實際職責對齊。」</div>
+    <div class="cue"><strong>重點：</strong>講一個<b>範圍</b>唔好講一個數。錨點用「ASWO或以上年資＋督導主任職銜」。<b>如果有實際數字想改，話我知一句就改。</b></div>
+    <div class="ev"><b>參考：</b>社署 SWO 職系 MPS 34–47（中堅 37）；救世軍「中心主任（大窩口）」起薪 $42,640。陳慶實際職級仍待招聘廣告確認。</div>
+  </div>
+
+  <div class="q violet"><div class="qh"><span class="qn">20</span>「你幾时可以開始上班？」<span class="cluster">條件</span></div>
+    <div class="ask">你幾時可以到任？</div>
+    <div class="ans"><b>答：</b>「[notice period: TBC]——如果有咩需要交接，<b>我可以配合</b>。我做過交接同離開前交接文件，唔會留手尾。」</div>
+    <div class="cue"><strong>重點：</strong>簡短答。你 2023年10月離開救世軍，<b>而家已經唔需要放通知期</b>——呢個係優勢，唔好漏咗講。</div>
+    <div class="ev"><b>提醒：</b>主任交接涉及服務檔案同在職同事，「我做過交接」呢句一定要講。</div>
+  </div>
+
+  <div class="q violet"><div class="qh"><span class="qn">21</span>「仲有咩我應該知嘅嗎？」<span class="cluster">收尾</span></div>
+    <div class="ask">仲有咩嘢我應該知道？</div>
+    <div class="ans"><b>答：</b>「三樣。第一，<b>我已經讀晒社署社區中心嘅服務規格同你哋嘅年報</b>——社區綜合服務部嘅架構、家庭支援網絡隊嘅服務數據、仲有12項服務嘅內容，見面可以傾細節。第二，<b>我持續做緊專業進修</b>——遊戲治療基礎證書課程我喺進修緊，「保護兒童網上課程」我已經完成咗兩單元。第三，<b>我同你哋家庭服務嗰part係對口嘅</b>——單親、綜緩、親子教育、學託，我做過。<br><br>如果你想聽我講多啲點樣將督導主任嗰套框架帶落嚟，我可以講多五分鐘。」</div>
+    <div class="cue"><strong>重點：</strong>最後一次加分機會。用嚟帶出<b>做咗功課</b>、<b>進修</b>、<b>對口</b>，再主動延長對話。</div>
+    <div class="ev"><b>證據：</b>保護兒童網上課程（兩單元約6小時、測驗≥90%得電子證書，你已取得）。</div>
+  </div>
+
+  <div class="q violet"><div class="qh"><span class="qn">22</span>「你會點改善社區中心？」<span class="cluster">B 服務發展</span></div>
+    <div class="ask">你會點改善中心嘅服務？</div>
+    <div class="ans"><b>答：</b>「我唔識得中心，所以我唔會亂講。我可以講我會<b>點樣查</b>：<b>第一步</b>，睇轉介數據同實際數據嘅差距——你哋家庭支援網絡隊成功轉介 1,188 個家庭，轉介之後呢啲家庭嘅狀況點？<b>第二步</b>，睇主動接觸嘅覆蓋——外展 1,328 個家庭當中有幾多係唔容易接觸嘅群體（劏房、簡樸房、獨居長者）？<b>第三步</b>，睇跨隊銜接——家庭支援網絡隊轉介入去嘅家庭，同學託、新來港、非華裔服務有冇接得住？<b>第四步</b>，睇義工網絡（206 人）仲有幾多未開發嘅用法。<br><br><b>有數據先有判斷</b>——呢個係我做督導主任時學到嘅。呢四步我頭三個月就會做完。」</div>
+    <div class="cue"><strong>重點：</strong>用「<b>我會點樣查</b>」代替「我會點改」——對一個你未到過嘅單位，呢個係唯一可信嘅答法，而且四步都係有數字支撐嘅。</div>
+    <div class="ev"><b>年報證據：</b>家庭支援網絡隊：外展 1,328／成功轉介 1,188／新招募義工 206／社區及福利認知 89.61%／改善社區網絡 87.95%。</div>
+  </div>
+
+  <div class="q violet"><div class="qh"><span class="qn">23</span>「你識做文書、報告、數據分析嗎？」<span class="cluster">A 單位管理</span></div>
+    <div class="ask">主任要做行政同數據分析，你做得到嗎？</div>
+    <div class="ans"><b>答：</b>「做得到。督導主任要交季度統計報表、服務數據、活動數量、指標達成率，我做咗四年——社署資助服務本身就係按季度交數據，你呢個位亦都一樣，我唔會有文化適應問題。<br><br>仲有教材同專欄嘅寫作經驗：對住家長、對住同工、對住專業人士，講法要唔同。<b>我用同一個服務目標寫過家長版、學生版同同工版</b>，知道點樣將一件事講畀唔同嘅人聽。<br><br>財務方面我要老實講：督導層面嘅資源調配我做過，完整嘅財務報表同審計流程係入職後要同總幹事同會計主任學嘅部分。」</div>
+    <div class="cue"><strong>重點：</strong>「<b>社署資助服務本身就係按季度交數據，你呢個位亦都一樣</b>」——一句就消除面試官對「由學校轉去社署系統」的擔心。記得守住財務界線。</div>
+    <div class="ev"><b>法規依據：</b>所有 FSA 樣本均訂明服務營辦者須提交<b>季度統計報表</b>，當中包括以訂明格式列出的服務使用者狀況、提供的服務及服務成效。</div>
+  </div>
+</section>
+
+<section id="gap">
+  <h2><span class="n">6</span>空窗期點答 + 三個高危題</h2>
+
+  <div class="card">
+    <h3 style="margin:0 0 12px;font-size:1rem">空窗期（2023年10月至今）— 四段式，唔好道歉</h3>
+    <div style="background:#faf8f3;border-radius:9px;padding:14px 16px;font-size:.89rem">
+      <b>① 事實：</b>「2023年10月我離開救世軍，主要原因係要照顧家庭。」<br><br>
+      <b>② 產出（只講真嘅）：</b>「呢段时间我主要做家庭照顧，同時有睇書同做專業反思——包括《失序日常》（何美怡醫生著，非凡出版）同《蛤蟆先生去看心理醫生》。<b>呢啲係閱讀同思考，唔係臨床訓練</b>；我唔會講自己識咗治療方法，但佢哋確實改變咗我睇家庭互動同個案嘅角度——特別係點樣理解行為背後嘅焦慮同創傷。」<br><br>
+      <b>③ 回到呢個位：</b>「所以我而家唔係離開專業，係由前線同督導轉去主任——想將我做過嘅服務發展同團隊管理帶去社區中心。」<br><br>
+      <b>④ 現時證據：</b>「我已經完成『保護兒童網上課程』兩單元（電子證書），而家喺進修遊戲治療基礎證書課程。」
+    </div>
+    <p style="font-size:.85rem;color:var(--ink2);margin:11px 0 0"><b>⚠️ 三個唔好：</b>唔好話「我喺度做緊自由工作」當工作；唔好將睇書講成受訓；唔好虛構任何進修。面試官如果追問書嘅內容，你要答得出「改變咗我咩」——答唔出就轉去講你實際做過嘅教材同工作坊。</p>
+  </div>
+
+  <div class="gap">
+    <h3>⚠️ 三個高危題</h3>
+    <p><strong>① 講名唔講「有咩成果」</strong> — 「我督導過兩隊學前教育社工同小組之家」✓；「我帶領過一個團隊」✗（冇數字＝冇證據）。<strong>每個數字都要同你份 Resume 一致</strong>，唔記得就講變化。</p>
+    <p><strong>② 唔好將「督導主任」講成前線</strong> — 呢個位同之前督導主任一樣係管理層。面試官問「你做主任會點做」，你要答<b>你已經做過</b>嘅嘢，唔係答你打算做。</p>
+    <p><strong>③ 唔好混淆社區中心同長者中心</strong> — 陳慶雖然有長者綜合服務部，但社署登記嘅社區中心單位係<b>社區綜合服務部</b>，服務對象係<b>全區居民</b>（包括非華裔、新來港人士、家庭、工友、學童），唔係淨係長者。提「長者地區中心 41 間、鄰舍中心 175 間」呢類數字會令人以為你搞錯咗單位。</p>
+  </div>
+
+  <div class="dd" style="margin-top:16px">
+    <div class="d y"><h4>✅ 要 Highlight</h4><ul>
+      <li><b>5年9個月</b>社工年資 ＋ <b>督導主任</b>職銜</li>
+      <li><b>督導跨度同量級</b>：4 隊長、13 位社工</li>
+      <li><b>家庭服務直接對口</b>：單親、綜緩、親子教育、學託</li>
+      <li><b>教材／指引開發</b>——極少人拎得出</li>
+      <li><b>臨床碩士</b>支撐專業判斷</li>
+      <li><b>已讀年報同 FSA</b>——做咗功課</li>
+    </ul></div>
+    <div class="d n"><h4>❌ 唔好 Highlight</h4><ul>
+      <li><b>空窗期三年</b>——唔好主動放大</li>
+      <li><b>「讀咗幾本書」</b>——書唔係專業資歷</li>
+      <li><b>長者中心數字</b>——呢個位唔係長者中心</li>
+      <li><b>太多兒童細節</b>——要帶到社區層面</li>
+      <li><b>空泛形容詞</b>：「有熱誠」「善溝通」</li>
+    </ul></div>
+  </div>
+</section>
+
+<section id="src">
+  <h2><span class="n">7</span>資料來源</h2>
+  <p class="lede">全部一手，2026年11月10日查核。</p>
+  <ol class="src">
+    <li><span class="doc">2025至2026年報：社區綜合服務部架構、職員名錄（至2026-03-31）、12項服務內容、家庭支援網絡隊及全服務數據</span><a href="https://www.mkchanhing.org.hk/annualreport/annualreport_25-26.pdf" target="_blank" rel="noopener">mkchanhing.org.hk/annualreport/annualreport_25-26.pdf</a></li>
+    <li><span class="doc">社區綜合服務部 12 項服務（家庭、家庭支援網絡、學託、新來港、非華裔、婦女、公民教育、就業、樓宇維修、消防安全、閱讀自修、進修課程）</span><a href="https://www.mkchanhing.org.hk/service2.htm" target="_blank" rel="noopener">mkchanhing.org.hk/service2.htm</a></li>
+    <li><span class="doc">家庭服務內容（單親、綜緩、夫婦關係、親子教育、家庭康樂、電話面談諮詢）</span><a href="https://www.mkchanhing.org.hk/ser_2.2d.htm" target="_blank" rel="noopener">mkchanhing.org.hk/ser_2.2d.htm</a></li>
+    <li><span class="doc">家庭支援網絡服務（外展、轉介、面談、支援網絡、網絡資源）</span><a href="https://www.mkchanhing.org.hk/ser_2.2j.htm" target="_blank" rel="noopener">mkchanhing.org.hk/ser_2.2j.htm</a></li>
+    <li><span class="doc">社區中心基本服務規定、服務量及服務成效標準（2,252 會員／2,056 小組節數／75% 滿意）</span><a href="https://www.swd.gov.hk/storage/asset/section/1231/tc/Sample_FSA_Multi-programme_Integrated_Service_Type%201.pdf" target="_blank" rel="noopener">社署《Sample FSA on Multi-programme Integrated Service (Type 1)》</a></li>
+    <li><span class="doc">油尖旺區社區中心名單（區內只得 1 間：旺角街坊會陳慶社區綜合服務部）</span><a href="https://www.swd.gov.hk/tc/pubsvc/district/kcytm/infobook1/" target="_blank" rel="noopener">社署 九龍城及油尖旺區 本區服務概覽</a></li>
+    <li><span class="doc">社署資助 13 間社區中心名單（截至 2025-08-08）</span><a href="https://www.swd.gov.hk/storage/asset/section/1242/tc/CC_20250808_c.pdf" target="_blank" rel="noopener">社署《NGOs Community Centre 社區中心》</a></li>
+    <li><span class="doc">非政府機構一般職位之薪級表（SWO MPS 34–47／ASWO 16–33）</span><a href="https://www.swd.gov.hk/storage/asset/section/586/tc/Salary_Scale_of_Common_Posts.pdf" target="_blank" rel="noopener">社署《Salary Scale of Common Posts》</a></li>
+    <li><span class="doc">社會工作主任職系職責（SWO）</span><a href="https://civilservice.ctgoodjobs.hk/grades/231/social-work-officer-swo-grade" target="_blank" rel="noopener">civilservice.ctgoodjobs.hk/grades/231/social-work-officer-swo-grade</a></li>
+  </ol>
+  <p style="font-size:.82rem;color:var(--ink2);margin-top:14px"><b>限制：</b>年報服務數字由機構自行公布，未經社署核對；FSA 樣本只供參考，實際條款以社署發出的要約及通知書為準；<b>實際招聘廣告原文未攞到</b>（機構網站只有空白表格模板，CTgoodjobs 頁面內容取唔到，明報 JUMP 被 IP 封），所以職級、薪金及團隊細節仍屬按職系職責推定。</p>
+</section>
+
+</div>
+
+<footer>
+  全部架構與數字引自陳慶社會服務中心 2025至2026年報及社署公開文件，於 <b>2026年11月10日</b> 查核<br>
+  <span style="opacity:.65">本頁為面試準備用途，非官方文件；如與社署或機構最新公布有異，以官方為準。</span>
+</footer>
+
+</body>
+</html>
